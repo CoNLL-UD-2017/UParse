@@ -215,7 +215,7 @@ def postprocess(indir, outdir):
 if __name__=="__main__":
   input_dir = sys.argv[1]
   output_dir = sys.argv[2]
-  #process(input_dir, output_dir)
+  process(input_dir, output_dir)
   postprocess(input_dir, output_dir)
 
 
