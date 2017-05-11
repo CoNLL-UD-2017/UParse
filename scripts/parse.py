@@ -22,8 +22,9 @@ def load_deprel(codedir):
 		cnt = 0
 		for line in f:
 			line = line.strip()
-			valid_deprel[cnt] = line
-			cnt += 1
+			if line != 'root':
+				valid_deprel[cnt] = line
+				cnt += 1
 	return valid_deprel
 
 
