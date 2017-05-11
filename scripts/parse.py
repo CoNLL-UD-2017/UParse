@@ -86,7 +86,7 @@ def process(indir, outdir, codedir, runType):
 
 		# check model
 		if model not in models or model not in model2len:
-			model = 'Czech=DEL'
+			model = 'Czech-DEL'
 		print('Using model', model)
 
 		infile = os.path.join(indir, filename)
