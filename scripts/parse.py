@@ -31,7 +31,7 @@ def load_depdist(model, codedir):
 	dep_dist_dir = os.path.join(codedir, 'ud-dep-dist')
 	tb_deps = os.listdir(dep_dist_dir)
 	dep_dist = {}
-	dep_file = 'UD-Czech'  # default delex model
+	dep_file = 'UD_Czech'  # default delex model
 
 	if model in tb_deps:
 		dep_file = model
