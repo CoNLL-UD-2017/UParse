@@ -3,6 +3,9 @@ import sys
 import json
 import subprocess
 
+curdir = '/home/UParse/parser'
+# codedir = '.'
+
 from random import randint
 
 def load_json(input):
@@ -17,7 +20,7 @@ def load_json(input):
 
 
 def load_setup_file():
-	setup_file = '/home/UParse/parser/vocab/ud_setup.txt'
+	setup_file = codedir + '/vocab/ud_setup.txt'
 	ltcode2model = {}
 	lcode2model = {}
 	model2len = {}
@@ -52,9 +55,6 @@ def process(indir, outdir):
 		else:
 			model = lcode2model['hsb']
 
-		if model == 'none':
-			continue
-
 		infile = os.path.join(indir, filename)
 		inputFile = os.path.join(outdir, 'incleaned-' + filename)
 		outputFile = os.path.join(outdir, 'outcleaned-' + outname)
@@ -77,7 +77,7 @@ def process(indir, outdir):
 					tokens = line.split('\t')
 					assert len(tokens) == 10
 					wid = tokens[0]
-					if '-' in wid or '.' in wid or word_cnt > maxlen:
+					if '-' in wid or '.' in wid or word_cnt >= maxlen:
 						continue
 					else:
 						line = '\t'.join(tokens[:6]) + '\t' + str(word_cnt) + '\t' + '\t'.join(tokens[7:])
@@ -86,9 +86,9 @@ def process(indir, outdir):
 		fout.close()
 		print('Parse file:', inputFile)
 
-		modelPath = '/home/UParse/parser/conll2017_models/' + model + '/model_0.001.tune.t7'
-		classifier = '/home/UParse/parser/conll2017_models/' + model + '/lbl_lassifier.t7'
-		command = 'th /home/UParse/parser/dense_multi_parser.lua --modelPath ' + modelPath + ' --classifierPath ' + classifier + ' --input ' + inputFile + ' --output ' + outputFile + ' --mstalg ChuLiuEdmonds'
+		modelPath = codedir + '/conll2017_models/' + model + '/model_0.001.tune.t7'
+		classifier = codedir + '/conll2017_models/' + model + '/lbl_lassifier.t7'
+		command = 'th ' + codedir + '/dense_multi_parser.lua --modelPath ' + modelPath + ' --classifierPath ' + classifier + ' --input ' + inputFile + ' --output ' + outputFile + ' --mstalg ChuLiuEdmonds'
 		os.system(command)
 
 		print('Finished parsing!')
@@ -96,7 +96,7 @@ def process(indir, outdir):
 
 def load_vocab():
 	valid_deprel = {}
-	with open('/home/UParse/parser/vocab/ud_rel.vocab') as f:
+	with open(codedir + '/vocab/ud_rel.vocab') as f:
 		cnt = 0
 		for line in f:
 			line = line.strip()
@@ -135,6 +135,7 @@ def postprocess(indir, outdir):
 	print('Start post-processing...')
 	data_files = load_json(indir)
 	model2len, lcode2model, ltcode2model = load_setup_file()
+	deprel_vocab = load_vocab()
 	for filename in data_files:
 		print(filename)
 		infile = os.path.join(indir, filename)
@@ -152,72 +153,69 @@ def postprocess(indir, outdir):
 		else:
 			model = lcode2model['hsb']
 
-		if model == 'none':
-			generateRandomOutput(infile, outFile)
-		else:
-			predFile = os.path.join(outdir, 'outcleaned-' + outname)
-			fout = open(outFile, 'w')
-			
-			pred_lines = list()
-			with open(predFile) as f:
-				pred_lines = f.readlines()
+		predFile = os.path.join(outdir, 'outcleaned-' + outname)
+		fout = open(outFile, 'w')
+		
+		pred_lines = list()
+		with open(predFile) as f:
+			pred_lines = f.readlines()
 
-			i = 0
-			j = 0
-			root = True
-			root_pos = -1
-			with open(infile) as f:
-				for line in f:
-					line = line.strip()
-					if line.startswith('#'):
-						j += 1
-						continue
-					elif line == '':
-						print(line)
-						print(pred_lines[i].strip())
-						assert line == pred_lines[i].strip()
-						i += 1
-						j += 1
-						root = True
-						root_pos = -1
+		i = 0
+		j = 0
+		root = True
+		root_pos = -1
+		with open(infile) as f:
+			for line in f:
+				line = line.strip()
+				pred_line = pred_lines[i].strip()
+				if line.startswith('#'):
+					fout.write(line + '\n')
+					j += 1
+					continue
+				elif line == '':
+					assert line == pred_line
+					i += 1
+					j += 1
+					root = True
+					root_pos = -1
+					fout.write(line + '\n')
+				elif line != '' and pred_line == '':
+					tokens = line.split('\t')
+					tokens[6] = str(int(tokens[0]) - 1)
+					rand_idx = randint(0, len(deprel_vocab) - 1)
+					tokens[7] = deprel_vocab[rand_idx]
+					new_line = '\t'.join(tokens)
+					fout.write(new_line + '\n')
+					j += 1
+				else:
+					# read line
+					tokens = line.split('\t')
+					assert len(tokens) == 10
+					if '-' in tokens[0]:
 						fout.write(line + '\n')
-					elif line != '' and pred_lines[i].strip() == '':
-						tokens = line.split('\t')
-						tokens[6] = str(j - 1)
-						tokens[7] = 'amod'
-						new_line = '\t'.join(tokens)
-						fout.write(new_line + '\n')
 						j += 1
 					else:
-						# read line
-						pred_line = pred_lines[i].strip()
-						tokens = line.split('\t')
-						assert len(tokens) == 10
-						if '-' in tokens[0]:
-							fout.write(line + '\n')
-							j += 1
-						else:
-							fields = pred_line.split('\t')
-							assert len(fields) == 10
-							fields[5] = tokens[5]
-							if fields[7] == 'root':
-								if root:
-									root = False
-									root_pos = fields[0]
-								else:  # change prediction of there is already a root
-									fields[6] = root_pos
-									fields[7] = 'ccomp'
-								# print(fields)
-							pred_line = '\t'.join(fields)
-							fout.write(pred_line + '\n')
-							i += 1
-							j += 1
+						fields = pred_line.split('\t')
+						assert len(fields) == 10
+						fields[5] = tokens[5]
+						if fields[7] == 'root':
+							if root:
+								root = False
+								root_pos = fields[0]
+							else:  # change prediction of there is already a root
+								fields[6] = root_pos
+								fields[7] = 'ccomp'
+							# print(fields)
+						pred_line = '\t'.join(fields)
+						fout.write(pred_line + '\n')
+						i += 1
+						j += 1
 
 
 if __name__=="__main__":
   input_dir = sys.argv[1]
   output_dir = sys.argv[2]
-  # process(input_dir, output_dir)
+  #process(input_dir, output_dir)
   postprocess(input_dir, output_dir)
 
 
