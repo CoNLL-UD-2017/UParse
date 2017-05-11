@@ -3,7 +3,7 @@ import sys
 import json
 import subprocess
 
-curdir = '/home/UParse/parser'
+codedir = '/home/UParse/parser'
 # codedir = '.'
 
 from random import randint
