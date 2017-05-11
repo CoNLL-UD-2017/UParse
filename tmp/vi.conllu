@@ -1,0 +1,772 @@
+1	Hay	_	CCONJ	_	_	4	cc	_	_
+2	một	_	NUM	_	NumType=Card	3	nummod	_	_
+3	người	_	NOUN	_	_	4	nsubj	_	_
+4	lính	_	VERB	_	_	0	root	_	_
+5	hải	_	ADP	_	_	6	nummod	_	_
+6	quân	_	NOUN	_	_	4	obl	_	_
+7	Pháp	_	NOUN	_	_	6	compound	_	_
+8	đã	_	X	_	_	9	advmod	_	_
+9	rải truyền	_	VERB	_	_	4	conj	_	_
+10	đơn	_	NOUN	_	_	9	obj	_	_
+11	cho	_	ADP	_	_	12	case	_	_
+12	người	_	NOUN	_	_	10	nmod	_	_
+13	dân	_	NOUN	_	_	12	compound	_	_
+14	nước	_	NOUN	_	_	12	compound	_	_
+15	Pháp	_	NOUN	_	_	12	compound	_	_
+16	cùng chống	_	VERB	_	_	9	ccomp	_	_
+17	lại	_	X	_	_	16	advmod	_	_
+18	cuộc chiến	_	NOUN	_	_	16	obj	_	_
+19	phi nghĩa	_	NOUN	_	_	18	amod	_	_
+20	của	_	ADP	_	_	21	case	_	_
+21	quân đội	_	NOUN	_	_	19	nmod	_	_
+22	Pháp	_	NOUN	_	_	21	compound	_	_
+23	tại	_	ADP	_	_	24	case	_	_
+24	VN	_	NOUN	_	_	21	nmod	_	_
+25	.	_	PUNCT	_	_	4	punct	_	_
+
+1	bà	_	NOUN	_	_	2	compound	_	_
+2	Raymonde	_	NOUN	_	_	4	nsubj	_	_
+3	Dien	_	NOUN	_	_	0	root	_	_
+4	chia sẻ	_	VERB	_	_	3	ccomp	_	_
+5	:	_	PUNCT	_	_	3	punct	_	_
+6	"	_	PUNCT	_	_	10	punct	_	_
+7	cha	_	NOUN	_	_	10	nsubj	_	_
+8	tôi	_	PROPN	_	_	7	det	_	_
+9	bị	_	VERB	_	_	10	aux	_	_
+10	bắt	_	VERB	_	_	4	ccomp	_	_
+11	,	_	PUNCT	_	_	15	punct	_	_
+12	chị	_	NOUN	_	_	15	nsubj	_	_
+13	tôi	_	PROPN	_	_	15	nsubj	_	_
+14	bị	_	VERB	_	_	15	aux	_	_
+15	đày	_	VERB	_	_	10	ccomp	_	_
+16	và	_	SCONJ	_	_	22	cc	_	_
+17	anh	_	NOUN	_	_	22	nsubj	_	_
+18	trai	_	NOUN	_	_	22	nsubj	_	_
+19	tôi	_	PROPN	_	_	18	det	_	_
+20	đã	_	X	_	_	22	advmod	_	_
+21	bị	_	VERB	_	_	22	aux	_	_
+22	bắn	_	VERB	_	_	15	conj	_	_
+23	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Tôi	_	PROPN	_	_	2	det	_	_
+2	sớm	_	NOUN	_	_	3	obl	_	_
+3	biết	_	VERB	_	_	0	root	_	_
+4	cuộc chiến phi nghĩa	_	NOUN	_	_	3	obj	_	_
+5	của	_	ADP	_	_	6	case	_	_
+6	quân đội	_	NOUN	_	_	4	nmod	_	_
+7	viễn chinh	_	NOUN	_	_	6	compound	_	_
+8	Pháp	_	NOUN	_	_	6	compound	_	_
+9	nên	_	CCONJ	_	_	3	cc	_	_
+10	đã	_	X	_	_	11	advmod	_	_
+11	đứng dậy	_	VERB	_	_	3	parataxis	_	_
+12	đấu tranh	_	VERB	_	_	11	xcomp	_	_
+13	.	_	PUNCT	_	_	3	punct	_	_
+
+1	Tôi	_	PROPN	_	_	4	nsubj	_	_
+2	cũng	_	X	_	_	4	advmod	_	_
+3	đã	_	X	_	_	4	advmod	_	_
+4	tham gia	_	VERB	_	_	0	root	_	_
+5	quân	_	NOUN	_	_	4	compound	_	_
+6	đội	_	NOUN	_	_	5	compound	_	_
+7	để	_	ADP	_	_	8	case	_	_
+8	chống phát	_	VERB	_	_	4	conj	_	_
+9	xít Đức	_	NOUN	_	_	8	obj	_	_
+10	tại	_	ADP	_	_	11	case	_	_
+11	Pháp	_	NOUN	_	_	8	nmod	_	_
+12	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Và	_	CCONJ	_	_	4	cc	_	_
+2	tôi	_	PROPN	_	_	4	nsubj	_	_
+3	được	_	VERB	_	_	4	aux	_	_
+4	cử	_	VERB	_	_	0	root	_	_
+5	sang	_	VERB	_	_	4	xcomp	_	_
+6	VN	_	NOUN	_	_	5	obj	_	_
+7	để	_	ADP	_	_	8	case	_	_
+8	giúp	_	VERB	_	_	5	ccomp	_	_
+9	người	_	NOUN	_	_	8	obj	_	_
+10	VN	_	NOUN	_	_	9	compound	_	_
+11	chống phát	_	VERB	_	_	9	xcomp	_	_
+12	xít	_	VERB	_	_	11	xcomp	_	_
+13	Nhật	_	NOUN	_	_	12	obj	_	_
+14	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Đó	_	PROPN	_	_	3	nsubj	_	_
+2	là	_	AUX	_	_	3	cop	_	_
+3	cuộc	_	NOUN	_	_	0	root	_	_
+4	chiến	_	VERB	_	_	3	ccomp	_	_
+5	tranh	_	VERB	_	_	3	xcomp	_	_
+6	phi nghĩa	_	NOUN	_	_	5	obj	_	_
+7	.	_	PUNCT	_	_	3	punct	_	_
+
+1	đoàn	_	NOUN	_	_	4	nsubj	_	_
+2	quân	_	NOUN	_	_	1	compound	_	_
+3	chúng tôi	_	PROPN	_	_	4	nsubj	_	_
+4	sang	_	VERB	_	_	0	root	_	_
+5	VN	_	NOUN	_	_	7	nsubj	_	_
+6	là	_	AUX	_	_	7	cop	_	_
+7	quân	_	NOUN	_	_	4	conj	_	_
+8	xâm lược	_	VERB	_	_	7	xcomp	_	_
+9	chứ	_	CCONJ	_	_	14	dep	_	_
+10	không	_	X	_	Polarity=Neg	14	advmod	_	_
+11	phải	_	VERB	_	_	14	aux	_	_
+12	là	_	AUX	_	_	14	cop	_	_
+13	những	_	DET	_	_	14	det	_	_
+14	người	_	NOUN	_	_	7	conj	_	_
+15	đi	_	VERB	_	_	14	xcomp	_	_
+16	bảo vệ	_	VERB	_	_	15	xcomp	_	_
+17	nhân dân	_	NOUN	_	_	16	obj	_	_
+18	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Tôi	_	PROPN	_	_	3	nsubj	_	_
+2	đã	_	X	_	_	3	advmod	_	_
+3	tìm	_	VERB	_	_	0	root	_	_
+4	cách trở	_	VERB	_	_	3	xcomp	_	_
+5	về	_	ADP	_	_	6	case	_	_
+6	Pháp	_	NOUN	_	_	4	obj	_	_
+7	phối	_	VERB	_	_	6	xcomp	_	_
+8	hợp đảng	_	ADJ	_	_	7	xcomp	_	_
+9	Cộng sản	_	CCONJ	_	_	7	cc	_	_
+10	Pháp	_	NOUN	_	_	7	obj	_	_
+11	dấy	_	VERB	_	_	10	xcomp	_	_
+12	lên	_	X	_	_	11	advmod	_	_
+13	phong trào	_	NOUN	_	_	11	obj	_	_
+14	chống	_	VERB	_	_	13	xcomp	_	_
+15	cuộc	_	NOUN	_	_	14	obj	_	_
+16	chiến tranh	_	NOUN	_	_	14	obj	_	_
+17	phi	_	ADP	_	_	18	nummod	_	_
+18	nghĩa	_	NOUN	_	_	14	obj	_	_
+19	đó	_	PROPN	_	_	18	det	_	_
+20	.	_	PUNCT	_	_	3	punct	_	_
+
+1	Tôi	_	PROPN	_	_	2	nsubj	_	_
+2	hoạt động	_	VERB	_	_	0	root	_	_
+3	bí mật	_	NOUN	_	_	2	obj	_	_
+4	để	_	ADP	_	_	5	case	_	_
+5	chống	_	VERB	_	_	2	conj	_	_
+6	chiến tranh	_	NOUN	_	_	5	obj	_	_
+7	và	_	SCONJ	_	_	8	cc	_	_
+8	đi	_	VERB	_	_	5	conj	_	_
+9	phát truyền	_	VERB	_	_	8	xcomp	_	_
+10	đơn	_	NOUN	_	_	9	obj	_	_
+11	nêu khẩu hiệu	_	VERB	_	_	10	xcomp	_	_
+12	chống	_	VERB	_	_	11	xcomp	_	_
+13	chiến tranh	_	NOUN	_	_	12	obj	_	_
+14	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Phong	_	NOUN	_	_	2	nsubj	_	_
+2	trào	_	VERB	_	_	0	root	_	_
+3	lan truyền mạnh	_	VERB	_	_	2	xcomp	_	_
+4	mẽ	_	ADJ	_	_	3	xcomp	_	_
+5	hơn	_	X	_	_	4	advmod	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Tôi	_	PROPN	_	_	3	nsubj	_	_
+2	bị	_	VERB	_	_	3	aux	_	_
+3	bắt	_	VERB	_	_	0	root	_	_
+4	và	_	SCONJ	_	_	5	cc	_	_
+5	tòa	_	NOUN	_	_	3	obl	_	_
+6	án	_	NOUN	_	_	3	obj	_	_
+7	xử	_	VERB	_	_	6	xcomp	_	_
+8	5	_	NUM	_	NumType=Card	9	nummod	_	_
+9	năm	_	NOUN	_	_	7	obl	_	_
+10	tù đày	_	VERB	_	_	9	xcomp	_	_
+11	"	_	PUNCT	_	_	3	punct	_	_
+12	.	_	PUNCT	_	_	3	punct	_	_
+
+1	sự kiện	_	NOUN	_	_	5	nsubj	_	_
+2	của	_	ADP	_	_	3	case	_	_
+3	ông	_	NOUN	_	_	1	nmod	_	_
+4	đã	_	X	_	_	5	advmod	_	_
+5	làm	_	VERB	_	_	0	root	_	_
+6	toàn	_	NOUN	_	_	5	obj	_	_
+7	dân	_	NOUN	_	_	6	compound	_	_
+8	Pháp càng	_	NOUN	_	_	6	compound	_	_
+9	phẫn nộ	_	VERB	_	_	7	xcomp	_	_
+10	với	_	ADP	_	_	11	case	_	_
+11	cuộc chiến	_	NOUN	_	_	9	obl	_	_
+12	chết chóc	_	NOUN	_	_	11	compound	_	_
+13	này	_	PROPN	_	_	12	det	_	_
+14	.	_	PUNCT	_	_	5	punct	_	_
+
+1	Ông	_	NOUN	_	_	3	nsubj	_	_
+2	đã	_	X	_	_	3	advmod	_	_
+3	trở thành	_	VERB	_	_	0	root	_	_
+4	người	_	NOUN	_	_	5	compound	_	_
+5	bạn	_	NOUN	_	_	3	obj	_	_
+6	thân	_	ADJ	_	_	5	amod	_	_
+7	thiết	_	VERB	_	_	5	xcomp	_	_
+8	với	_	ADP	_	_	9	case	_	_
+9	toàn thể	_	NOUN	_	_	7	obl	_	_
+10	nhân dân	_	NOUN	_	_	9	compound	_	_
+11	VN	_	NOUN	_	_	9	nmod	_	_
+12	.	_	PUNCT	_	_	3	punct	_	_
+
+1	Tôi	_	PROPN	_	_	2	nsubj	_	_
+2	sinh	_	VERB	_	_	0	root	_	_
+3	ra	_	X	_	_	2	advmod	_	_
+4	trong	_	ADP	_	_	5	case	_	_
+5	gia đình	_	NOUN	_	_	2	obj	_	_
+6	nghèo	_	ADJ	_	_	5	amod	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Cha	_	NOUN	_	_	7	nsubj	_	_
+2	là	_	AUX	_	_	3	cop	_	_
+3	thợ	_	NOUN	_	_	0	root	_	_
+4	,	_	PUNCT	_	_	7	punct	_	_
+5	mẹ	_	NOUN	_	_	7	nsubj	_	_
+6	là	_	AUX	_	_	7	cop	_	_
+7	nông	_	NOUN	_	_	3	ccomp	_	_
+8	dân	_	NOUN	_	_	7	obj	_	_
+9	.	_	PUNCT	_	_	7	punct	_	_
+
+1	cha	_	NOUN	_	_	3	nsubj	_	_
+2	tôi	_	PROPN	_	_	1	det	_	_
+3	bị phát	_	VERB	_	_	0	root	_	_
+4	xít Đức	_	NOUN	_	_	3	obj	_	_
+5	bắt giam	_	VERB	_	_	4	xcomp	_	_
+6	bên	_	NOUN	_	_	5	obj	_	_
+7	Áo	_	NOUN	_	_	6	compound	_	_
+8	.	_	PUNCT	_	_	3	punct	_	_
+
+1	17	_	NUM	_	NumType=Card	2	nummod	_	_
+2	tuổi	_	NOUN	_	_	5	compound	_	_
+3	tôi	_	PROPN	_	_	5	det	_	_
+4	là	_	AUX	_	_	5	cop	_	_
+5	thư	_	NOUN	_	_	0	root	_	_
+6	ký	_	VERB	_	_	5	ccomp	_	_
+7	đánh	_	VERB	_	_	6	xcomp	_	_
+8	máy	_	NOUN	_	_	7	obj	_	_
+9	cho	_	ADP	_	_	10	case	_	_
+10	văn phòng	_	NOUN	_	_	7	obj	_	_
+11	đảng	_	NOUN	_	_	10	compound	_	_
+12	Cộng	_	NOUN	_	_	10	compound	_	_
+13	sản	_	VERB	_	_	11	xcomp	_	_
+14	Pháp	_	NOUN	_	_	13	obj	_	_
+15	.	_	PUNCT	_	_	6	punct	_	_
+
+1	Nhiều	_	ADJ	_	_	2	xcomp	_	_
+2	thông tin	_	VERB	_	_	0	root	_	_
+3	về	_	ADP	_	_	4	case	_	_
+4	chiến tranh	_	NOUN	_	_	2	obl	_	_
+5	VN	_	NOUN	_	_	4	compound	_	_
+6	được	_	VERB	_	_	7	aux	_	_
+7	đưa	_	VERB	_	_	2	ccomp	_	_
+8	trên báo	_	ADP	_	_	9	nummod	_	_
+9	Nhân Đạo	_	NOUN	_	_	7	obl	_	_
+10	.	_	PUNCT	_	_	7	punct	_	_
+
+1	Tôi	_	PROPN	_	_	3	nsubj	_	_
+2	đã	_	X	_	_	3	advmod	_	_
+3	vận động	_	VERB	_	_	0	root	_	_
+4	những	_	DET	_	_	5	det	_	_
+5	người	_	NOUN	_	_	3	obj	_	_
+6	công nhân	_	NOUN	_	_	5	compound	_	_
+7	cùng	_	ADJ	_	_	6	amod	_	_
+8	chống	_	VERB	_	_	6	xcomp	_	_
+9	lại	_	X	_	_	8	advmod	_	_
+10	cuộc chiến	_	NOUN	_	_	8	obj	_	_
+11	tranh bẩn	_	ADP	_	_	12	nummod	_	_
+12	thỉu	_	NOUN	_	_	10	nmod	_	_
+13	đó	_	PROPN	_	_	12	det	_	_
+14	.	_	PUNCT	_	_	3	punct	_	_
+
+1	Một	_	NUM	_	NumType=Card	2	nummod	_	_
+2	hôm	_	NOUN	_	_	4	obl	_	_
+3	tôi	_	PROPN	_	_	2	det	_	_
+4	biết	_	VERB	_	_	0	root	_	_
+5	có	_	VERB	_	_	4	xcomp	_	_
+6	đoàn	_	NOUN	_	_	5	obj	_	_
+7	tàu chở	_	ADP	_	_	8	nummod	_	_
+8	vũ khí	_	NOUN	_	_	6	nmod	_	_
+9	,	_	PUNCT	_	_	10	punct	_	_
+10	xe tăng	_	NOUN	_	_	11	nsubj	_	_
+11	sang	_	VERB	_	_	4	ccomp	_	_
+12	VN	_	NOUN	_	_	11	obj	_	_
+13	.	_	PUNCT	_	_	4	punct	_	_
+
+1	đoàn	_	NOUN	_	_	4	nsubj	_	_
+2	tàu	_	NOUN	_	_	1	compound	_	_
+3	đó	_	PROPN	_	_	4	nsubj	_	_
+4	dừng	_	VERB	_	_	0	root	_	_
+5	lại	_	X	_	_	4	advmod	_	_
+6	,	_	PUNCT	_	_	4	punct	_	_
+7	chứ	_	CCONJ	_	_	15	cc	_	_
+8	không	_	X	_	Polarity=Neg	15	advmod	_	_
+9	thì	_	CCONJ	_	_	15	cc	_	_
+10	hôm	_	NOUN	_	_	15	obl	_	_
+11	nay	_	PROPN	_	_	10	det	_	_
+12	tôi	_	PROPN	_	_	15	nsubj	_	_
+13	đã	_	X	_	_	15	advmod	_	_
+14	không	_	X	_	Polarity=Neg	15	advmod	_	_
+15	có	_	VERB	_	_	4	parataxis	_	_
+16	mặt	_	NOUN	_	_	15	obj	_	_
+17	với	_	ADP	_	_	19	case	_	_
+18	các	_	DET	_	_	19	det	_	_
+19	bạn	_	NOUN	_	_	16	nmod	_	_
+20	tại	_	ADP	_	_	21	case	_	_
+21	đây	_	PROPN	_	_	19	nmod	_	_
+22	.	_	PUNCT	_	_	4	punct	_	_
+
+1	sau	_	ADP	_	_	3	case	_	_
+2	đó	_	PROPN	_	_	3	det	_	_
+3	cảnh sát	_	NOUN	_	_	6	nsubj	_	_
+4	Pháp bắt tôi	_	PROPN	_	_	3	compound	_	_
+5	và	_	SCONJ	_	_	6	cc	_	_
+6	dẫn	_	VERB	_	_	0	root	_	_
+7	tôi	_	PROPN	_	_	6	obj	_	_
+8	đi	_	VERB	_	_	6	ccomp	_	_
+9	giam	_	VERB	_	_	8	xcomp	_	_
+10	ở	_	ADP	_	_	11	case	_	_
+11	nhà	_	NOUN	_	_	8	obl	_	_
+12	giam	_	NOUN	_	_	11	compound	_	_
+13	Tours	_	NOUN	_	_	11	compound	_	_
+14	...	_	PUNCT	_	_	6	punct	_	_
+
+1	ra	_	VERB	_	_	4	advcl	_	_
+2	tù	_	NOUN	_	_	1	obj	_	_
+3	bà	_	NOUN	_	_	2	compound	_	_
+4	tiếp tục	_	VERB	_	_	0	root	_	_
+5	tham	_	VERB	_	_	4	xcomp	_	_
+6	gia đảng	_	NOUN	_	_	5	obj	_	_
+7	bộ	_	NOUN	_	_	5	obj	_	_
+8	cộng	_	VERB	_	_	6	xcomp	_	_
+9	sản địa phương	_	VERB	_	_	7	xcomp	_	_
+10	và	_	SCONJ	_	_	11	cc	_	_
+11	tích cực	_	ADJ	_	_	4	conj	_	_
+12	tham gia	_	VERB	_	_	11	xcomp	_	_
+13	các	_	DET	_	_	14	det	_	_
+14	phong trào	_	NOUN	_	_	12	nmod	_	_
+15	đấu tranh	_	VERB	_	_	11	xcomp	_	_
+16	của đảng	_	ADP	_	_	17	nummod	_	_
+17	Cộng sản	_	NOUN	_	_	15	obl	_	_
+18	Pháp	_	NOUN	_	_	17	compound	_	_
+19	trong	_	ADP	_	_	21	case	_	_
+20	cuộc	_	NOUN	_	_	21	compound	_	_
+21	đấu tranh	_	VERB	_	_	17	amod	_	_
+22	tại	_	ADP	_	_	23	case	_	_
+23	VN	_	NOUN	_	_	21	nmod	_	_
+24	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Họ	_	PROPN	_	_	2	nsubj	_	_
+2	tiếp tục	_	VERB	_	_	0	root	_	_
+3	cuộc	_	NOUN	_	_	4	compound	_	_
+4	đấu tranh	_	VERB	_	_	2	ccomp	_	_
+5	vì	_	ADP	_	_	6	case	_	_
+6	công lý	_	NOUN	_	_	4	obl	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	năm	_	NOUN	_	_	5	obl	_	_
+2	1956	_	NUM	_	NumType=Card	1	nummod	_	_
+3	hai	_	NUM	_	NumType=Card	4	nummod	_	_
+4	người	_	NOUN	_	_	5	nsubj	_	_
+5	có	_	VERB	_	_	0	root	_	_
+6	cơ hội	_	NOUN	_	_	5	obj	_	_
+7	đến	_	ADP	_	_	8	case	_	_
+8	VN	_	NOUN	_	_	6	nmod	_	_
+9	trong	_	ADP	_	_	10	case	_	_
+10	đoàn	_	NOUN	_	_	8	nmod	_	_
+11	thanh niên	_	NOUN	_	_	10	compound	_	_
+12	cộng sản	_	NOUN	_	_	11	compound	_	_
+13	Pháp	_	NOUN	_	_	11	amod	_	_
+14	được	_	VERB	_	_	15	aux	_	_
+15	Bác	_	NOUN	_	_	5	parataxis	_	_
+16	Hồ tiếp	_	NOUN	_	_	15	compound	_	_
+17	.	_	PUNCT	_	_	5	punct	_	_
+
+1	ông	_	NOUN	_	_	2	compound	_	_
+2	Henri	_	NOUN	_	_	4	nsubj	_	_
+3	Martin	_	NOUN	_	_	4	nsubj	_	_
+4	hồ hởi	_	ADJ	_	_	0	root	_	_
+5	:	_	PUNCT	_	_	4	punct	_	_
+6	"	_	PUNCT	_	_	4	punct	_	_
+7	Bác	_	NOUN	_	_	9	nsubj	_	_
+8	là	_	AUX	_	_	9	cop	_	_
+9	lãnh tụ	_	NOUN	_	_	4	ccomp	_	_
+10	để	_	VERB	_	_	9	xcomp	_	_
+11	lại	_	X	_	_	10	advmod	_	_
+12	ấn tượng	_	NOUN	_	_	10	obj	_	_
+13	sâu sắc	_	NOUN	_	_	12	amod	_	_
+14	trong	_	ADP	_	_	15	case	_	_
+15	cuộc	_	NOUN	_	_	13	nmod	_	_
+16	đời	_	NOUN	_	_	15	compound	_	_
+17	tôi	_	PROPN	_	_	16	det	_	_
+18	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Bác Hồ	_	NOUN	_	_	3	nsubj	_	_
+2	là	_	AUX	_	_	3	cop	_	_
+3	hiện	_	NOUN	_	_	0	root	_	_
+4	thân	_	ADJ	_	_	3	amod	_	_
+5	tất	_	VERB	_	_	3	ccomp	_	_
+6	cả	_	PART	_	_	8	discourse	_	_
+7	những	_	DET	_	_	8	det	_	_
+8	gì	_	PROPN	_	_	5	obl	_	_
+9	tốt đẹp	_	ADJ	_	_	8	amod	_	_
+10	nhất	_	X	_	_	9	advmod	_	_
+11	.	_	PUNCT	_	_	3	punct	_	_
+
+1	lúc	_	NOUN	_	_	6	obl	_	_
+2	đó	_	PROPN	_	_	1	det	_	_
+3	nước	_	NOUN	_	_	1	compound	_	_
+4	Pháp chuẩn	_	NOUN	_	_	3	compound	_	_
+5	bị	_	VERB	_	_	6	aux	_	_
+6	tấn công	_	VERB	_	_	0	root	_	_
+7	Ai Cập	_	NOUN	_	_	6	obj	_	_
+8	.	_	PUNCT	_	_	6	punct	_	_
+
+1	Tôi	_	PROPN	_	_	2	nsubj	_	_
+2	quyết định	_	VERB	_	_	0	root	_	_
+3	trở	_	VERB	_	_	2	xcomp	_	_
+4	về	_	VERB	_	_	3	xcomp	_	_
+5	ngay	_	X	_	_	4	advmod	_	_
+6	để	_	ADP	_	_	7	case	_	_
+7	tiếp tục	_	VERB	_	_	2	conj	_	_
+8	tham gia	_	VERB	_	_	7	xcomp	_	_
+9	chống	_	VERB	_	_	8	xcomp	_	_
+10	cuộc	_	NOUN	_	_	9	obj	_	_
+11	chiến tranh	_	NOUN	_	_	10	compound	_	_
+12	phi nghĩa	_	NOUN	_	_	10	compound	_	_
+13	mới	_	ADJ	_	_	12	amod	_	_
+14	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Bác Hồ ủng hộ	_	NOUN	_	_	2	nsubj	_	_
+2	quyết định	_	VERB	_	_	0	root	_	_
+3	của	_	ADP	_	_	4	case	_	_
+4	tôi	_	PROPN	_	_	2	nmod	_	_
+5	...	_	PUNCT	_	_	2	punct	_	_
+6	"	_	PUNCT	_	_	2	punct	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Họ	_	PROPN	_	_	3	nsubj	_	_
+2	đã	_	X	_	_	3	advmod	_	_
+3	để	_	VERB	_	_	0	root	_	_
+4	lại	_	X	_	_	3	advmod	_	_
+5	hậu quả	_	NOUN	_	_	3	obj	_	_
+6	quá	_	X	_	_	7	advmod	_	_
+7	lớn	_	ADJ	_	_	3	conj	_	_
+8	bằng	_	ADP	_	_	9	case	_	_
+9	chất độc	_	NOUN	_	_	7	compound	_	_
+10	da	_	NOUN	_	_	9	compound	_	_
+11	cam	_	NOUN	_	_	9	compound	_	_
+12	/	_	PUNCT	_	_	11	dep	_	_
+13	dioxin	_	NOUN	_	_	11	compound	_	_
+14	hủy diệt	_	ADJ	_	_	7	conj	_	_
+15	.	_	PUNCT	_	_	3	punct	_	_
+
+1	Hiện giờ	_	NOUN	_	_	4	nsubj	_	_
+2	chúng tôi	_	PROPN	_	_	1	det	_	_
+3	vẫn	_	X	_	_	4	advmod	_	_
+4	đấu tranh	_	VERB	_	_	0	root	_	_
+5	để	_	ADP	_	_	4	case	_	_
+6	chống	_	VERB	_	_	4	conj	_	_
+7	lại	_	X	_	_	6	advmod	_	_
+8	,	_	PUNCT	_	_	4	punct	_	_
+9	tố cáo	_	VERB	_	_	6	conj	_	_
+10	di hại	_	NOUN	_	_	9	obj	_	_
+11	của	_	ADP	_	_	12	case	_	_
+12	chất độc	_	NOUN	_	_	10	nmod	_	_
+13	da cam	_	NOUN	_	_	12	compound	_	_
+14	...	_	PUNCT	_	_	4	punct	_	_
+
+1	nhân dân	_	NOUN	_	_	4	nsubj	_	_
+2	VN	_	NOUN	_	_	1	compound	_	_
+3	đang	_	X	_	_	4	advmod	_	_
+4	khắc phục	_	VERB	_	_	0	root	_	_
+5	hậu quả	_	NOUN	_	_	4	obj	_	_
+6	chiến tranh	_	NOUN	_	_	5	compound	_	_
+7	.	_	PUNCT	_	_	4	punct	_	_
+
+1	hậu quả	_	NOUN	_	_	4	nsubj	_	_
+2	nghiêm trọng	_	ADJ	_	_	1	compound	_	_
+3	là	_	AUX	_	_	4	cop	_	_
+4	hậu quả	_	NOUN	_	_	0	root	_	_
+5	chất độc	_	NOUN	_	_	4	compound	_	_
+6	da	_	NOUN	_	_	5	compound	_	_
+7	cam	_	NOUN	_	_	6	compound	_	_
+8	.	_	PUNCT	_	_	4	punct	_	_
+
+1	tháng	_	NOUN	_	_	6	obl	_	_
+2	3	_	NUM	_	NumType=Card	1	nummod	_	_
+3	-	_	PUNCT	_	_	6	punct	_	_
+4	2005	_	NUM	_	NumType=Card	1	nummod	_	_
+5	chúng tôi	_	PROPN	_	_	6	nsubj	_	_
+6	cùng	_	ADJ	_	_	0	root	_	_
+7	hội	_	NOUN	_	_	6	obj	_	_
+8	Hữu nghị pháp	_	NOUN	_	_	7	compound	_	_
+9	-	_	PUNCT	_	_	12	punct	_	_
+10	Việt	_	NOUN	_	_	7	conj	_	_
+11	sẽ	_	X	_	_	12	advmod	_	_
+12	tổ chức	_	VERB	_	_	6	ccomp	_	_
+13	hội thảo	_	NOUN	_	_	12	obj	_	_
+14	quốc tế	_	NOUN	_	_	13	amod	_	_
+15	về	_	ADP	_	_	16	case	_	_
+16	chất độc	_	NOUN	_	_	14	nmod	_	_
+17	da	_	NOUN	_	_	16	compound	_	_
+18	cam	_	NOUN	_	_	16	compound	_	_
+19	.	_	PUNCT	_	_	12	punct	_	_
+
+1	Cho	_	X	_	_	3	nummod	_	_
+2	đến	_	ADP	_	_	3	case	_	_
+3	giờ	_	NOUN	_	_	4	obl	_	_
+4	có	_	VERB	_	_	0	root	_	_
+5	nhiều	_	ADJ	_	_	4	xcomp	_	_
+6	cá nhân	_	NOUN	_	_	4	obj	_	_
+7	và	_	SCONJ	_	_	8	cc	_	_
+8	tổ chức	_	VERB	_	_	4	conj	_	_
+9	đăng	_	VERB	_	_	8	xcomp	_	_
+10	ký	_	VERB	_	_	9	xcomp	_	_
+11	tham gia	_	VERB	_	_	10	xcomp	_	_
+12	với	_	ADP	_	_	13	case	_	_
+13	chúng tôi	_	PROPN	_	_	11	obl	_	_
+14	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Tôi	_	PROPN	_	_	6	nsubj	_	_
+2	rất	_	X	_	_	4	advmod	_	_
+3	tự	_	PROPN	_	_	6	det	_	_
+4	hào	_	NOUN	_	_	6	amod	_	_
+5	là	_	AUX	_	_	6	cop	_	_
+6	người	_	NOUN	_	_	0	root	_	_
+7	bạn	_	NOUN	_	_	6	compound	_	_
+8	của	_	ADP	_	_	9	case	_	_
+9	VN	_	NOUN	_	_	7	nmod	_	_
+10	.	_	PUNCT	_	_	6	punct	_	_
+
+1	hành động	_	NOUN	_	_	11	nsubj	_	_
+2	của	_	ADP	_	_	3	case	_	_
+3	chúng tôi	_	PROPN	_	_	4	nsubj	_	_
+4	đòi quyền	_	NOUN	_	_	1	conj	_	_
+5	công bằng	_	ADJ	_	_	4	xcomp	_	_
+6	cho	_	ADP	_	_	7	case	_	_
+7	người	_	NOUN	_	_	11	nsubj	_	_
+8	dân	_	NOUN	_	_	7	compound	_	_
+9	VN	_	NOUN	_	_	7	compound	_	_
+10	bị	_	VERB	_	_	11	aux	_	_
+11	nhiễm	_	VERB	_	_	0	root	_	_
+12	chất độc	_	NOUN	_	_	11	obj	_	_
+13	da cam	_	NOUN	_	_	12	compound	_	_
+14	đã	_	X	_	_	15	advmod	_	_
+15	diễn	_	VERB	_	_	11	ccomp	_	_
+16	ra	_	X	_	_	15	advmod	_	_
+17	từ	_	ADP	_	_	19	case	_	_
+18	nhiều	_	ADJ	_	_	19	amod	_	_
+19	năm	_	NOUN	_	_	15	obl	_	_
+20	qua	_	VERB	_	_	19	xcomp	_	_
+21	.	_	PUNCT	_	_	11	punct	_	_
+
+1	tại	_	ADP	_	_	2	case	_	_
+2	Pháp	_	NOUN	_	_	9	advcl	_	_
+3	,	_	PUNCT	_	_	9	punct	_	_
+4	nhiều	_	ADJ	_	_	2	amod	_	_
+5	cá nhân	_	NOUN	_	_	4	conj	_	_
+6	,	_	PUNCT	_	_	9	punct	_	_
+7	hội	_	NOUN	_	_	9	nsubj	_	_
+8	đã	_	X	_	_	9	advmod	_	_
+9	tham gia	_	VERB	_	_	0	root	_	_
+10	cuộc	_	NOUN	_	_	9	obj	_	_
+11	vận động	_	VERB	_	_	10	xcomp	_	_
+12	của	_	ADP	_	_	13	case	_	_
+13	chúng tôi	_	PROPN	_	_	14	nsubj	_	_
+14	chống	_	VERB	_	_	9	ccomp	_	_
+15	chất độc	_	NOUN	_	_	14	obj	_	_
+16	da	_	NOUN	_	_	15	compound	_	_
+17	cam	_	NOUN	_	_	14	obj	_	_
+18	tại	_	ADP	_	_	19	case	_	_
+19	VN	_	NOUN	_	_	17	nmod	_	_
+20	.	_	PUNCT	_	_	9	punct	_	_
+
+1	đến	_	ADP	_	_	2	case	_	_
+2	VN	_	NOUN	_	_	3	compound	_	_
+3	lần	_	NOUN	_	_	10	obl	_	_
+4	này	_	PROPN	_	_	3	det	_	_
+5	,	_	PUNCT	_	_	10	punct	_	_
+6	hai	_	NUM	_	NumType=Card	7	nummod	_	_
+7	người	_	NOUN	_	_	10	nsubj	_	_
+8	như	_	CCONJ	_	_	10	cc	_	_
+9	đang	_	X	_	_	10	advmod	_	_
+10	trở lại	_	VERB	_	_	0	root	_	_
+11	ngôi	_	NOUN	_	_	12	compound	_	_
+12	nhà	_	NOUN	_	_	10	obj	_	_
+13	của	_	ADP	_	_	14	case	_	_
+14	mình	_	PROPN	_	_	12	nmod	_	_
+15	.	_	PUNCT	_	_	10	punct	_	_
+
+1	Nguyên đại	_	ADP	_	_	2	nummod	_	_
+2	sứ	_	NOUN	_	_	14	nsubj	_	_
+3	đầu tiên	_	ADJ	_	_	2	amod	_	_
+4	của	_	ADP	_	_	5	case	_	_
+5	VN	_	NOUN	_	_	2	nmod	_	_
+6	tại	_	ADP	_	_	7	case	_	_
+7	Pháp	_	NOUN	_	_	2	nmod	_	_
+8	,	_	PUNCT	_	_	14	punct	_	_
+9	ông	_	NOUN	_	_	10	compound	_	_
+10	Võ	_	NOUN	_	_	7	conj	_	_
+11	Văn Sung	_	NOUN	_	_	10	amod	_	_
+12	,	_	PUNCT	_	_	14	punct	_	_
+13	đã	_	X	_	_	14	advmod	_	_
+14	nhấn mạnh	_	VERB	_	_	0	root	_	_
+15	:	_	PUNCT	_	_	14	punct	_	_
+16	"	_	PUNCT	_	_	14	punct	_	_
+17	Hai	_	NUM	_	NumType=Card	18	nummod	_	_
+18	bạn	_	NOUN	_	_	14	obl	_	_
+19	là	_	AUX	_	_	20	cop	_	_
+20	người	_	NOUN	_	_	14	ccomp	_	_
+21	Pháp	_	NOUN	_	_	20	compound	_	_
+22	rất	_	X	_	_	23	advmod	_	_
+23	vn	_	ADJ	_	_	20	amod	_	_
+24	"	_	PUNCT	_	_	14	punct	_	_
+25	.	_	PUNCT	_	_	14	punct	_	_
+
+1	ông	_	NOUN	_	_	2	compound	_	_
+2	Võ	_	NOUN	_	_	4	nsubj	_	_
+3	Văn Sung	_	NOUN	_	_	4	nsubj	_	_
+4	cho	_	VERB	_	_	0	root	_	_
+5	biết	_	VERB	_	_	4	xcomp	_	_
+6	:	_	PUNCT	_	_	4	punct	_	_
+7	"	_	PUNCT	_	_	4	punct	_	_
+8	phong trào	_	NOUN	_	_	12	nsubj	_	_
+9	nhân	_	VERB	_	_	8	xcomp	_	_
+10	dân	_	NOUN	_	_	9	obj	_	_
+11	Pháp	_	NOUN	_	_	9	obj	_	_
+12	ủng hộ	_	VERB	_	_	4	ccomp	_	_
+13	VN	_	NOUN	_	_	12	obj	_	_
+14	chống	_	VERB	_	_	12	ccomp	_	_
+15	chiến tranh	_	NOUN	_	_	14	obj	_	_
+16	xâm lược	_	NOUN	_	_	15	compound	_	_
+17	của	_	ADP	_	_	18	case	_	_
+18	thực dân	_	NOUN	_	_	15	nmod	_	_
+19	Pháp	_	NOUN	_	_	18	compound	_	_
+20	và Mỹ	_	NOUN	_	_	19	amod	_	_
+21	rất	_	X	_	_	22	advmod	_	_
+22	sôi nổi	_	ADJ	_	_	12	ccomp	_	_
+23	.	_	PUNCT	_	_	4	punct	_	_
+
+1	ông	_	NOUN	_	_	2	compound	_	_
+2	Henri Martin	_	NOUN	_	_	4	nsubj	_	_
+3	đã	_	X	_	_	4	advmod	_	_
+4	gửi	_	VERB	_	_	0	root	_	_
+5	thông điệp	_	VERB	_	_	4	xcomp	_	_
+6	đến	_	ADP	_	_	8	case	_	_
+7	các	_	DET	_	_	8	det	_	_
+8	bạn	_	NOUN	_	_	5	obl	_	_
+9	trẻ	_	NOUN	_	_	8	compound	_	_
+10	VN	_	NOUN	_	_	8	nmod	_	_
+11	:	_	PUNCT	_	_	4	punct	_	_
+12	"	_	PUNCT	_	_	4	punct	_	_
+13	Các	_	DET	_	_	14	det	_	_
+14	bạn	_	NOUN	_	_	17	nsubj	_	_
+15	hôm	_	NOUN	_	_	14	compound	_	_
+16	nay	_	PROPN	_	_	17	obl	_	_
+17	đón	_	VERB	_	_	4	parataxis	_	_
+18	tiếp	_	VERB	_	_	17	xcomp	_	_
+19	chúng tôi	_	PROPN	_	_	18	obj	_	_
+20	như	_	CCONJ	_	_	22	cc	_	_
+21	những	_	DET	_	_	22	det	_	_
+22	người bạn	_	NOUN	_	_	17	obl	_	_
+23	thân thiết	_	ADJ	_	_	22	amod	_	_
+24	.	_	PUNCT	_	_	4	punct	_	_
+
+1	tình	_	NOUN	_	_	10	nsubj	_	_
+2	hữu	_	NOUN	_	_	1	compound	_	_
+3	nghị	_	VERB	_	_	0	root	_	_
+4	hai	_	NUM	_	NumType=Card	5	nummod	_	_
+5	nước	_	NOUN	_	_	3	obl	_	_
+6	Việt	_	NOUN	_	_	5	compound	_	_
+7	-	_	PUNCT	_	_	8	punct	_	_
+8	Pháp	_	NOUN	_	_	10	nsubj	_	_
+9	đã	_	X	_	_	10	advmod	_	_
+10	có	_	VERB	_	_	3	ccomp	_	_
+11	từ	_	ADP	_	_	13	case	_	_
+12	rất	_	X	_	_	13	advmod	_	_
+13	lâu đời	_	ADJ	_	_	10	ccomp	_	_
+14	,	_	PUNCT	_	_	16	punct	_	_
+15	từ	_	ADP	_	_	16	case	_	_
+16	khi	_	NOUN	_	_	13	nmod	_	_
+17	tôi chưa	_	ADP	_	_	18	case	_	_
+18	chào đời	_	NOUN	_	_	16	nmod	_	_
+19	.	_	PUNCT	_	_	10	punct	_	_
+
+1	từ	_	ADP	_	_	3	case	_	_
+2	những	_	DET	_	_	3	det	_	_
+3	năm	_	NOUN	_	_	8	nmod	_	_
+4	1920	_	NUM	_	NumType=Card	3	nummod	_	_
+5	khi	_	NOUN	_	_	3	nmod	_	_
+6	Bác Hồ	_	NOUN	_	_	5	compound	_	_
+7	là	_	AUX	_	_	8	cop	_	_
+8	người	_	NOUN	_	_	0	root	_	_
+9	tham gia	_	VERB	_	_	8	xcomp	_	_
+10	sáng	_	ADJ	_	_	9	xcomp	_	_
+11	lập	_	VERB	_	_	9	xcomp	_	_
+12	đảng	_	NOUN	_	_	11	obj	_	_
+13	Cộng	_	NOUN	_	_	11	obj	_	_
+14	sản	_	VERB	_	_	11	ccomp	_	_
+15	Pháp	_	NOUN	_	_	14	obj	_	_
+16	.	_	PUNCT	_	_	8	punct	_	_
+
+1	Tôi	_	PROPN	_	_	4	nsubj	_	_
+2	chỉ	_	X	_	_	4	advmod	_	_
+3	là	_	AUX	_	_	4	cop	_	_
+4	người	_	NOUN	_	_	0	root	_	_
+5	phát triển	_	VERB	_	_	4	xcomp	_	_
+6	thêm tình	_	VERB	_	_	4	xcomp	_	_
+7	hữu	_	NUM	_	NumType=Card	8	nummod	_	_
+8	nghị	_	NOUN	_	_	6	obj	_	_
+9	đó	_	PROPN	_	_	8	discourse	_	_
+10	"	_	PUNCT	_	_	4	punct	_	_
+11	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Nhiều	_	ADJ	_	_	4	advcl	_	_
+2	người	_	NOUN	_	_	4	nsubj	_	_
+3	đã	_	X	_	_	4	advmod	_	_
+4	xúc động	_	VERB	_	_	0	root	_	_
+5	:	_	PUNCT	_	_	4	punct	_	_
+6	"	_	PUNCT	_	_	4	punct	_	_
+7	Chúng ta	_	PROPN	_	_	9	nsubj	_	_
+8	phải	_	VERB	_	_	9	aux	_	_
+9	đặt tên	_	VERB	_	_	4	ccomp	_	_
+10	VN	_	NOUN	_	_	9	obj	_	_
+11	cho	_	ADP	_	_	13	case	_	_
+12	hai	_	NUM	_	NumType=Card	13	nummod	_	_
+13	người	_	NOUN	_	_	9	obl	_	_
+14	bạn	_	NOUN	_	_	13	compound	_	_
+15	của	_	ADP	_	_	16	case	_	_
+16	chúng ta	_	PROPN	_	_	13	amod	_	_
+17	là	_	AUX	_	_	19	cop	_	_
+18	hồ henri	_	ADP	_	_	19	amod	_	_
+19	martin	_	NOUN	_	_	9	xcomp	_	_
+20	và	_	SCONJ	_	_	21	cc	_	_
+21	Hồ	_	NOUN	_	_	19	conj	_	_
+22	Raymonde	_	NOUN	_	_	21	compound	_	_
+23	Dien	_	NOUN	_	_	21	compound	_	_
+24	"	_	PUNCT	_	_	4	punct	_	_
+25	.	_	PUNCT	_	_	4	punct	_	_
+
+1	cuộc đời	_	NOUN	_	_	0	root	_	_
+2	dưới	_	ADP	_	_	3	case	_	_
+3	vành	_	NOUN	_	_	1	nmod	_	_
+4	mũ	_	NOUN	_	_	3	compound	_	_
+5	thám tử	_	NOUN	_	_	3	compound	_	_
+6	.	_	PUNCT	_	_	1	punct	_	_
+
+1	đòi	_	VERB	_	_	4	csubj	_	_
+2	lại	_	X	_	_	1	advmod	_	_
+3	một	_	NUM	_	NumType=Card	4	nummod	_	_
+4	cuộc đời	_	NOUN	_	_	0	root	_	_
+5	:	_	PUNCT	_	_	4	punct	_	_
+6	đứa	_	NOUN	_	_	9	nsubj	_	_
+7	con	_	NOUN	_	_	9	nsubj	_	_
+8	bị	_	VERB	_	_	9	aux	_	_
+9	đánh cắp	_	VERB	_	_	4	ccomp	_	_
+10	.	_	PUNCT	_	_	4	punct	_	_
+
+1	chuyến	_	NOUN	_	_	2	nsubj	_	_
+2	bay	_	VERB	_	_	0	root	_	_
+3	sang	_	VERB	_	_	2	xcomp	_	_
+4	châu Âu	_	NOUN	_	_	3	obj	_	_
+5	phải	_	VERB	_	_	6	aux	_	_
+6	hoãn	_	VERB	_	_	2	ccomp	_	_
+7	lại	_	X	_	_	6	advmod	_	_
+8	do	_	ADP	_	_	9	case	_	_
+9	thời	_	NOUN	_	_	6	obj	_	_
+10	tiết	_	VERB	_	_	9	xcomp	_	_
+11	xấu	_	ADJ	_	_	10	xcomp	_	_
+12	.	_	PUNCT	_	_	2	punct	_	_
+

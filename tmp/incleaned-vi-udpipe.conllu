@@ -1,0 +1,772 @@
+1	Hay	Hay	CCONJ	C	_	0	_	_	_
+2	một	một	NUM	M	NumType=Card	1	_	_	_
+3	người	người	NOUN	N	_	2	_	_	_
+4	lính	lính	VERB	V	_	3	_	_	_
+5	hải	hải	ADP	E	_	4	_	_	_
+6	quân	quân	NOUN	N	_	5	_	_	_
+7	Pháp	Pháp	NOUN	Np	_	6	_	_	_
+8	đã	đã	X	R	_	7	_	_	_
+9	rải truyền	rải truyền	VERB	V	_	8	_	_	_
+10	đơn	đơn	NOUN	N	_	9	_	_	_
+11	cho	cho	ADP	E	_	10	_	_	_
+12	người	người	NOUN	N	_	11	_	_	_
+13	dân	dân	NOUN	N	_	12	_	_	_
+14	nước	nước	NOUN	N	_	13	_	_	_
+15	Pháp	Pháp	NOUN	Np	_	14	_	_	_
+16	cùng chống	cùng chống	VERB	V	_	15	_	_	_
+17	lại	lại	X	R	_	16	_	_	_
+18	cuộc chiến	cuộc chiến	NOUN	N	_	17	_	_	_
+19	phi nghĩa	phi nghĩa	NOUN	N	_	18	_	_	_
+20	của	của	ADP	E	_	19	_	_	_
+21	quân đội	quân đội	NOUN	N	_	20	_	_	_
+22	Pháp	Pháp	NOUN	Np	_	21	_	_	_
+23	tại	tại	ADP	E	_	22	_	_	_
+24	VN	VN	NOUN	Ny	_	23	_	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	_	_	SpaceAfter=No
+
+1	bà	bà	NOUN	N	_	0	_	_	_
+2	Raymonde	Raymonde	NOUN	Np	_	1	_	_	_
+3	Dien	Dien	NOUN	Np	_	2	_	_	_
+4	chia sẻ	chia sẻ	VERB	V	_	3	_	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	4	_	_	_
+6	"	"	PUNCT	"	_	5	_	_	SpaceAfter=No
+7	cha	cha	NOUN	N	_	6	_	_	_
+8	tôi	tôi	PROPN	P	_	7	_	_	_
+9	bị	bị	VERB	V	_	8	_	_	_
+10	bắt	bắt	VERB	V	_	9	_	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	_	_	_
+12	chị	chị	NOUN	N	_	11	_	_	_
+13	tôi	tôi	PROPN	P	_	12	_	_	_
+14	bị	bị	VERB	V	_	13	_	_	_
+15	đày	đày	VERB	V	_	14	_	_	_
+16	và	và	SCONJ	CC	_	15	_	_	_
+17	anh	anh	NOUN	N	_	16	_	_	_
+18	trai	trai	NOUN	N	_	17	_	_	_
+19	tôi	tôi	PROPN	P	_	18	_	_	_
+20	đã	đã	X	R	_	19	_	_	_
+21	bị	bị	VERB	V	_	20	_	_	_
+22	bắn	bắn	VERB	V	_	21	_	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	22	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	sớm	sớm	NOUN	N	_	1	_	_	_
+3	biết	biết	VERB	V	_	2	_	_	_
+4	cuộc chiến phi nghĩa	cuộc chiến phi nghĩa	NOUN	N	_	3	_	_	_
+5	của	của	ADP	E	_	4	_	_	_
+6	quân đội	quân đội	NOUN	N	_	5	_	_	_
+7	viễn chinh	viễn chinh	NOUN	N	_	6	_	_	_
+8	Pháp	Pháp	NOUN	Np	_	7	_	_	_
+9	nên	nên	CCONJ	C	_	8	_	_	_
+10	đã	đã	X	R	_	9	_	_	_
+11	đứng dậy	đứng dậy	VERB	V	_	10	_	_	_
+12	đấu tranh	đấu tranh	VERB	V	_	11	_	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	cũng	cũng	X	R	_	1	_	_	SpacesAfter=\n
+3	đã	đã	X	R	_	2	_	_	_
+4	tham gia	tham gia	VERB	V	_	3	_	_	_
+5	quân	quân	NOUN	N	_	4	_	_	_
+6	đội	đội	NOUN	N	_	5	_	_	_
+7	để	để	ADP	E	_	6	_	_	_
+8	chống phát	chống phát	VERB	V	_	7	_	_	_
+9	xít Đức	xít Đức	NOUN	N	_	8	_	_	_
+10	tại	tại	ADP	E	_	9	_	_	_
+11	Pháp	Pháp	NOUN	Np	_	10	_	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	_	_	SpaceAfter=No
+
+1	Và	Và	CCONJ	C	_	0	_	_	_
+2	tôi	tôi	PROPN	P	_	1	_	_	_
+3	được	được	VERB	V	_	2	_	_	_
+4	cử	cử	VERB	V	_	3	_	_	_
+5	sang	sang	VERB	V	_	4	_	_	_
+6	VN	VN	NOUN	Ny	_	5	_	_	_
+7	để	để	ADP	E	_	6	_	_	SpacesAfter=\n
+8	giúp	giúp	VERB	V	_	7	_	_	_
+9	người	người	NOUN	N	_	8	_	_	_
+10	VN	VN	NOUN	Ny	_	9	_	_	_
+11	chống phát	chống phát	VERB	V	_	10	_	_	_
+12	xít	xít	VERB	V	_	11	_	_	_
+13	Nhật	Nhật	NOUN	Np	_	12	_	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	_	_	SpaceAfter=No
+
+1	Đó	Đó	PROPN	P	_	0	_	_	_
+2	là	là	AUX	V	_	1	_	_	_
+3	cuộc	cuộc	NOUN	N	_	2	_	_	_
+4	chiến	chiến	VERB	V	_	3	_	_	_
+5	tranh	tranh	VERB	V	_	4	_	_	_
+6	phi nghĩa	phi nghĩa	NOUN	N	_	5	_	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	_	_	SpaceAfter=No
+
+1	đoàn	đoàn	NOUN	Nc	_	0	_	_	_
+2	quân	quân	NOUN	N	_	1	_	_	SpacesAfter=\n
+3	chúng tôi	chúng tôi	PROPN	P	_	2	_	_	_
+4	sang	sang	VERB	V	_	3	_	_	_
+5	VN	VN	NOUN	Ny	_	4	_	_	_
+6	là	là	AUX	V	_	5	_	_	_
+7	quân	quân	NOUN	N	_	6	_	_	_
+8	xâm lược	xâm lược	VERB	V	_	7	_	_	_
+9	chứ	chứ	CCONJ	C	_	8	_	_	_
+10	không	không	X	R	Polarity=Neg	9	_	_	_
+11	phải	phải	VERB	V	_	10	_	_	_
+12	là	là	AUX	V	_	11	_	_	_
+13	những	những	DET	L	_	12	_	_	_
+14	người	người	NOUN	N	_	13	_	_	_
+15	đi	đi	VERB	V	_	14	_	_	_
+16	bảo vệ	bảo vệ	VERB	V	_	15	_	_	_
+17	nhân dân	nhân dân	NOUN	N	_	16	_	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	đã	đã	X	R	_	1	_	_	_
+3	tìm	tìm	VERB	V	_	2	_	_	_
+4	cách trở	cách trở	VERB	V	_	3	_	_	_
+5	về	về	ADP	E	_	4	_	_	_
+6	Pháp	Pháp	NOUN	Np	_	5	_	_	_
+7	phối	phối	VERB	V	_	6	_	_	_
+8	hợp đảng	hợp đảng	ADJ	A	_	7	_	_	_
+9	Cộng sản	Cộng sản	CCONJ	C	_	8	_	_	_
+10	Pháp	Pháp	NOUN	Np	_	9	_	_	_
+11	dấy	dấy	VERB	V	_	10	_	_	_
+12	lên	lên	X	R	_	11	_	_	_
+13	phong trào	phong trào	NOUN	N	_	12	_	_	SpacesAfter=\n
+14	chống	chống	VERB	V	_	13	_	_	_
+15	cuộc	cuộc	NOUN	N	_	14	_	_	_
+16	chiến tranh	chiến tranh	NOUN	N	_	15	_	_	_
+17	phi	phi	ADP	E	_	16	_	_	_
+18	nghĩa	nghĩa	NOUN	N	_	17	_	_	_
+19	đó	đó	PROPN	P	_	18	_	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	hoạt động	hoạt động	VERB	V	_	1	_	_	_
+3	bí mật	bí mật	NOUN	N	_	2	_	_	_
+4	để	để	ADP	E	_	3	_	_	_
+5	chống	chống	VERB	V	_	4	_	_	_
+6	chiến tranh	chiến tranh	NOUN	N	_	5	_	_	SpacesAfter=\n
+7	và	và	SCONJ	CC	_	6	_	_	_
+8	đi	đi	VERB	V	_	7	_	_	_
+9	phát truyền	phát truyền	VERB	V	_	8	_	_	_
+10	đơn	đơn	NOUN	N	_	9	_	_	_
+11	nêu khẩu hiệu	nêu khẩu hiệu	VERB	V	_	10	_	_	_
+12	chống	chống	VERB	V	_	11	_	_	_
+13	chiến tranh	chiến tranh	NOUN	N	_	12	_	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	_	_	SpaceAfter=No
+
+1	Phong	Phong	NOUN	Np	_	0	_	_	_
+2	trào	trào	VERB	V	_	1	_	_	_
+3	lan truyền mạnh	lan truyền mạnh	VERB	V	_	2	_	_	_
+4	mẽ	mẽ	ADJ	A	_	3	_	_	_
+5	hơn	hơn	X	R	_	4	_	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	bị	bị	VERB	V	_	1	_	_	_
+3	bắt	bắt	VERB	V	_	2	_	_	_
+4	và	và	SCONJ	CC	_	3	_	_	_
+5	tòa	tòa	NOUN	N	_	4	_	_	_
+6	án	án	NOUN	N	_	5	_	_	_
+7	xử	xử	VERB	V	_	6	_	_	_
+8	5	5	NUM	M	NumType=Card	7	_	_	_
+9	năm	năm	NOUN	N	_	8	_	_	_
+10	tù đày	tù đày	VERB	V	_	9	_	_	SpaceAfter=No
+11	"	"	PUNCT	"	_	10	_	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	_	_	SpaceAfter=No
+
+1	sự kiện	sự kiện	NOUN	N	_	0	_	_	_
+2	của	của	ADP	E	_	1	_	_	_
+3	ông	ông	NOUN	N	_	2	_	_	_
+4	đã	đã	X	R	_	3	_	_	_
+5	làm	làm	VERB	V	_	4	_	_	_
+6	toàn	toàn	NOUN	N	_	5	_	_	SpacesAfter=\n
+7	dân	dân	NOUN	N	_	6	_	_	_
+8	Pháp càng	Pháp càng	NOUN	Np	_	7	_	_	_
+9	phẫn nộ	phẫn nộ	VERB	V	_	8	_	_	_
+10	với	với	ADP	E	_	9	_	_	_
+11	cuộc chiến	cuộc chiến	NOUN	N	_	10	_	_	_
+12	chết chóc	chết chóc	NOUN	N	_	11	_	_	_
+13	này	này	PROPN	P	_	12	_	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	_	_	SpaceAfter=No
+
+1	Ông	Ông	NOUN	N	_	0	_	_	_
+2	đã	đã	X	R	_	1	_	_	_
+3	trở thành	trở thành	VERB	V	_	2	_	_	_
+4	người	người	NOUN	Nc	_	3	_	_	_
+5	bạn	bạn	NOUN	N	_	4	_	_	SpacesAfter=\n
+6	thân	thân	ADJ	A	_	5	_	_	_
+7	thiết	thiết	VERB	V	_	6	_	_	_
+8	với	với	ADP	E	_	7	_	_	_
+9	toàn thể	toàn thể	NOUN	N	_	8	_	_	_
+10	nhân dân	nhân dân	NOUN	N	_	9	_	_	_
+11	VN	VN	NOUN	Ny	_	10	_	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	sinh	sinh	VERB	V	_	1	_	_	_
+3	ra	ra	X	R	_	2	_	_	_
+4	trong	trong	ADP	E	_	3	_	_	_
+5	gia đình	gia đình	NOUN	N	_	4	_	_	_
+6	nghèo	nghèo	ADJ	A	_	5	_	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	_	_	SpaceAfter=No
+
+1	Cha	cha	NOUN	N	_	0	_	_	_
+2	là	là	AUX	V	_	1	_	_	SpacesAfter=\n
+3	thợ	thợ	NOUN	N	_	2	_	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	_	_	_
+5	mẹ	mẹ	NOUN	N	_	4	_	_	_
+6	là	là	AUX	V	_	5	_	_	_
+7	nông	nông	NOUN	N	_	6	_	_	_
+8	dân	dân	NOUN	N	_	7	_	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	_	_	SpaceAfter=No
+
+1	cha	cha	NOUN	N	_	0	_	_	_
+2	tôi	tôi	PROPN	P	_	1	_	_	_
+3	bị phát	bị phát	VERB	V	_	2	_	_	_
+4	xít Đức	xít Đức	NOUN	Np	_	3	_	_	_
+5	bắt giam	bắt giam	VERB	V	_	4	_	_	_
+6	bên	bên	NOUN	N	_	5	_	_	_
+7	Áo	áo	NOUN	Np	_	6	_	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	_	_	SpaceAfter=No
+
+1	17	17	NUM	M	NumType=Card	0	_	_	_
+2	tuổi	tuổi	NOUN	N	_	1	_	_	_
+3	tôi	tôi	PROPN	P	_	2	_	_	_
+4	là	là	AUX	V	_	3	_	_	_
+5	thư	thư	NOUN	N	_	4	_	_	SpacesAfter=\n
+6	ký	ký	VERB	V	_	5	_	_	_
+7	đánh	đánh	VERB	V	_	6	_	_	_
+8	máy	máy	NOUN	N	_	7	_	_	_
+9	cho	cho	ADP	E	_	8	_	_	_
+10	văn phòng	văn phòng	NOUN	N	_	9	_	_	_
+11	đảng	đảng	NOUN	Nc	_	10	_	_	_
+12	Cộng	cộng	NOUN	Np	_	11	_	_	_
+13	sản	sản	VERB	V	_	12	_	_	_
+14	Pháp	Pháp	NOUN	Np	_	13	_	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	_	_	SpaceAfter=No
+
+1	Nhiều	Nhiều	ADJ	A	_	0	_	_	_
+2	thông tin	thông tin	VERB	V	_	1	_	_	_
+3	về	về	ADP	E	_	2	_	_	_
+4	chiến tranh	chiến tranh	NOUN	N	_	3	_	_	_
+5	VN	VN	NOUN	Ny	_	4	_	_	SpacesAfter=\n
+6	được	được	VERB	V	_	5	_	_	_
+7	đưa	đưa	VERB	V	_	6	_	_	_
+8	trên báo	trên báo	ADP	E	_	7	_	_	_
+9	Nhân Đạo	nhân đạo	NOUN	Np	_	8	_	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	đã	đã	X	R	_	1	_	_	_
+3	vận động	vận động	VERB	V	_	2	_	_	_
+4	những	những	DET	L	_	3	_	_	_
+5	người	người	NOUN	Nc	_	4	_	_	_
+6	công nhân	công nhân	NOUN	N	_	5	_	_	_
+7	cùng	cùng	ADJ	A	_	6	_	_	_
+8	chống	chống	VERB	V	_	7	_	_	_
+9	lại	lại	X	R	_	8	_	_	SpacesAfter=\n
+10	cuộc chiến	cuộc chiến	NOUN	N	_	9	_	_	_
+11	tranh bẩn	tranh bẩn	ADP	E	_	10	_	_	_
+12	thỉu	thỉu	NOUN	N	_	11	_	_	_
+13	đó	đó	PROPN	P	_	12	_	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	_	_	SpaceAfter=No
+
+1	Một	Một	NUM	M	NumType=Card	0	_	_	_
+2	hôm	hôm	NOUN	N	_	1	_	_	_
+3	tôi	tôi	PROPN	P	_	2	_	_	_
+4	biết	biết	VERB	V	_	3	_	_	_
+5	có	có	VERB	V	_	4	_	_	_
+6	đoàn	đoàn	NOUN	N	_	5	_	_	_
+7	tàu chở	tàu chở	ADP	E	_	6	_	_	_
+8	vũ khí	vũ khí	NOUN	N	_	7	_	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	_	_	_
+10	xe tăng	xe tăng	NOUN	N	_	9	_	_	SpacesAfter=\n
+11	sang	sang	VERB	V	_	10	_	_	_
+12	VN	VN	NOUN	Ny	_	11	_	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	_	_	SpaceAfter=No
+
+1	đoàn	đoàn	NOUN	Nc	_	0	_	_	_
+2	tàu	tàu	NOUN	N	_	1	_	_	_
+3	đó	đó	PROPN	P	_	2	_	_	_
+4	dừng	dừng	VERB	V	_	3	_	_	_
+5	lại	lại	X	R	_	4	_	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	_	_	_
+7	chứ	chứ	CCONJ	C	_	6	_	_	_
+8	không	không	X	R	Polarity=Neg	7	_	_	_
+9	thì	thì	CCONJ	C	_	8	_	_	_
+10	hôm	hôm	NOUN	N	_	9	_	_	_
+11	nay	nay	PROPN	P	_	10	_	_	_
+12	tôi	tôi	PROPN	P	_	11	_	_	_
+13	đã	đã	X	R	_	12	_	_	_
+14	không	không	X	R	Polarity=Neg	13	_	_	_
+15	có	có	VERB	V	_	14	_	_	_
+16	mặt	mặt	NOUN	N	_	15	_	_	_
+17	với	với	ADP	E	_	16	_	_	_
+18	các	các	DET	L	_	17	_	_	SpacesAfter=\n
+19	bạn	bạn	NOUN	N	_	18	_	_	_
+20	tại	tại	ADP	E	_	19	_	_	_
+21	đây	đây	PROPN	P	_	20	_	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	_	_	SpaceAfter=No
+
+1	sau	sau	ADP	E	_	0	_	_	_
+2	đó	đó	PROPN	P	_	1	_	_	_
+3	cảnh sát	cảnh sát	NOUN	N	_	2	_	_	_
+4	Pháp bắt tôi	Pháp bắt tôi	PROPN	P	_	3	_	_	_
+5	và	và	SCONJ	CC	_	4	_	_	_
+6	dẫn	dẫn	VERB	V	_	5	_	_	_
+7	tôi	tôi	PROPN	P	_	6	_	_	_
+8	đi	đi	VERB	V	_	7	_	_	_
+9	giam	giam	VERB	V	_	8	_	_	_
+10	ở	ở	ADP	E	_	9	_	_	_
+11	nhà	nhà	NOUN	N	_	10	_	_	_
+12	giam	giam	NOUN	N	_	11	_	_	_
+13	Tours	Tours	NOUN	Ny	_	12	_	_	SpaceAfter=No
+14	...	...	PUNCT	...	_	13	_	_	SpaceAfter=No
+
+1	ra	ra	VERB	V	_	0	_	_	_
+2	tù	tù	NOUN	N	_	1	_	_	_
+3	bà	bà	NOUN	N	_	2	_	_	_
+4	tiếp tục	tiếp tục	VERB	V	_	3	_	_	_
+5	tham	tham	VERB	V	_	4	_	_	_
+6	gia đảng	gia đảng	NOUN	N	_	5	_	_	_
+7	bộ	bộ	NOUN	N	_	6	_	_	_
+8	cộng	cộng	VERB	V	_	7	_	_	_
+9	sản địa phương	sản địa phương	VERB	V	_	8	_	_	_
+10	và	và	SCONJ	CC	_	9	_	_	_
+11	tích cực	tích cực	ADJ	A	_	10	_	_	_
+12	tham gia	tham gia	VERB	V	_	11	_	_	_
+13	các	các	DET	L	_	12	_	_	SpacesAfter=\n
+14	phong trào	phong trào	NOUN	N	_	13	_	_	_
+15	đấu tranh	đấu tranh	VERB	V	_	14	_	_	_
+16	của đảng	của đảng	ADP	E	_	15	_	_	_
+17	Cộng sản	Cộng sản	NOUN	N	_	16	_	_	_
+18	Pháp	Pháp	NOUN	Np	_	17	_	_	_
+19	trong	trong	ADP	E	_	18	_	_	_
+20	cuộc	cuộc	NOUN	N	_	19	_	_	_
+21	đấu tranh	đấu tranh	VERB	V	_	20	_	_	_
+22	tại	tại	ADP	E	_	21	_	_	_
+23	VN	VN	NOUN	Ny	_	22	_	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	_	_	SpaceAfter=No
+
+1	Họ	Họ	PROPN	P	_	0	_	_	_
+2	tiếp tục	tiếp tục	VERB	V	_	1	_	_	_
+3	cuộc	cuộc	NOUN	Nc	_	2	_	_	_
+4	đấu tranh	đấu tranh	VERB	V	_	3	_	_	_
+5	vì	vì	ADP	E	_	4	_	_	_
+6	công lý	công lý	NOUN	N	_	5	_	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	_	_	SpaceAfter=No
+
+1	năm	năm	NOUN	N	_	0	_	_	_
+2	1956	1956	NUM	M	NumType=Card	1	_	_	_
+3	hai	hai	NUM	M	NumType=Card	2	_	_	_
+4	người	người	NOUN	N	_	3	_	_	_
+5	có	có	VERB	V	_	4	_	_	_
+6	cơ hội	cơ hội	NOUN	N	_	5	_	_	_
+7	đến	đến	ADP	E	_	6	_	_	_
+8	VN	VN	NOUN	Ny	_	7	_	_	_
+9	trong	trong	ADP	E	_	8	_	_	_
+10	đoàn	đoàn	NOUN	Nc	_	9	_	_	SpacesAfter=\n
+11	thanh niên	thanh niên	NOUN	N	_	10	_	_	_
+12	cộng sản	cộng sản	NOUN	Nc	_	11	_	_	_
+13	Pháp	Pháp	NOUN	Np	_	12	_	_	_
+14	được	được	VERB	V	_	13	_	_	_
+15	Bác	bác	NOUN	Np	_	14	_	_	_
+16	Hồ tiếp	Hồ tiếp	NOUN	Ny	_	15	_	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	_	_	SpaceAfter=No
+
+1	ông	ông	NOUN	Nc	_	0	_	_	_
+2	Henri	Henri	NOUN	Np	_	1	_	_	_
+3	Martin	Martin	NOUN	Np	_	2	_	_	_
+4	hồ hởi	hồ hởi	ADJ	A	_	3	_	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	4	_	_	_
+6	"	"	PUNCT	"	_	5	_	_	SpaceAfter=No
+7	Bác	bác	NOUN	Np	_	6	_	_	_
+8	là	là	AUX	V	_	7	_	_	_
+9	lãnh tụ	lãnh tụ	NOUN	N	_	8	_	_	_
+10	để	để	VERB	V	_	9	_	_	_
+11	lại	lại	X	R	_	10	_	_	_
+12	ấn tượng	ấn tượng	NOUN	N	_	11	_	_	_
+13	sâu sắc	sâu sắc	NOUN	N	_	12	_	_	_
+14	trong	trong	ADP	E	_	13	_	_	_
+15	cuộc	cuộc	NOUN	N	_	14	_	_	_
+16	đời	đời	NOUN	N	_	15	_	_	_
+17	tôi	tôi	PROPN	P	_	16	_	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	_	_	SpaceAfter=No
+
+1	Bác Hồ	Bác Hồ	NOUN	N	_	0	_	_	_
+2	là	là	AUX	V	_	1	_	_	_
+3	hiện	hiện	NOUN	N	_	2	_	_	_
+4	thân	thân	ADJ	A	_	3	_	_	_
+5	tất	tất	VERB	V	_	4	_	_	_
+6	cả	cả	PART	T	_	5	_	_	_
+7	những	những	DET	L	_	6	_	_	SpacesAfter=\n
+8	gì	gì	PROPN	P	_	7	_	_	_
+9	tốt đẹp	tốt đẹp	ADJ	A	_	8	_	_	_
+10	nhất	nhất	X	R	_	9	_	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	_	_	SpaceAfter=No
+
+1	lúc	lúc	NOUN	N	_	0	_	_	_
+2	đó	đó	PROPN	P	_	1	_	_	_
+3	nước	nước	NOUN	N	_	2	_	_	_
+4	Pháp chuẩn	Pháp chuẩn	NOUN	Np	_	3	_	_	_
+5	bị	bị	VERB	V	_	4	_	_	_
+6	tấn công	tấn công	VERB	V	_	5	_	_	_
+7	Ai Cập	Ai Cập	NOUN	Ny	_	6	_	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	quyết định	quyết định	VERB	V	_	1	_	_	_
+3	trở	trở	VERB	V	_	2	_	_	SpacesAfter=\n
+4	về	về	VERB	V	_	3	_	_	_
+5	ngay	ngay	X	R	_	4	_	_	_
+6	để	để	ADP	E	_	5	_	_	_
+7	tiếp tục	tiếp tục	VERB	V	_	6	_	_	_
+8	tham gia	tham gia	VERB	V	_	7	_	_	_
+9	chống	chống	VERB	V	_	8	_	_	_
+10	cuộc	cuộc	NOUN	N	_	9	_	_	_
+11	chiến tranh	chiến tranh	NOUN	N	_	10	_	_	_
+12	phi nghĩa	phi nghĩa	NOUN	N	_	11	_	_	_
+13	mới	mới	ADJ	A	_	12	_	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	_	_	SpaceAfter=No
+
+1	Bác Hồ ủng hộ	Bác Hồ ủng hộ	NOUN	N	_	0	_	_	SpacesAfter=\n
+2	quyết định	quyết định	VERB	V	_	1	_	_	_
+3	của	của	ADP	E	_	2	_	_	_
+4	tôi	tôi	PROPN	P	_	3	_	_	SpaceAfter=No
+5	...	...	PUNCT	...	_	4	_	_	SpaceAfter=No
+6	"	"	PUNCT	"	_	5	_	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	_	_	SpaceAfter=No
+
+1	Họ	Họ	PROPN	P	_	0	_	_	_
+2	đã	đã	X	R	_	1	_	_	_
+3	để	để	VERB	V	_	2	_	_	_
+4	lại	lại	X	R	_	3	_	_	_
+5	hậu quả	hậu quả	NOUN	N	_	4	_	_	_
+6	quá	quá	X	R	_	5	_	_	_
+7	lớn	lớn	ADJ	A	_	6	_	_	_
+8	bằng	bằng	ADP	E	_	7	_	_	_
+9	chất độc	chất độc	NOUN	N	_	8	_	_	_
+10	da	da	NOUN	N	_	9	_	_	_
+11	cam	cam	NOUN	N	_	10	_	_	_
+12	/	/	PUNCT	NP	_	11	_	_	SpacesAfter=\n
+13	dioxin	dioxin	NOUN	N	_	12	_	_	_
+14	hủy diệt	hủy diệt	ADJ	A	_	13	_	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	_	_	SpaceAfter=No
+
+1	Hiện giờ	Hiện giờ	NOUN	N	_	0	_	_	_
+2	chúng tôi	chúng tôi	PROPN	P	_	1	_	_	_
+3	vẫn	vẫn	X	R	_	2	_	_	_
+4	đấu tranh	đấu tranh	VERB	V	_	3	_	_	_
+5	để	để	ADP	E	_	4	_	_	_
+6	chống	chống	VERB	V	_	5	_	_	_
+7	lại	lại	X	R	_	6	_	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	_	_	_
+9	tố cáo	tố cáo	VERB	V	_	8	_	_	_
+10	di hại	di hại	NOUN	N	_	9	_	_	SpacesAfter=\n
+11	của	của	ADP	E	_	10	_	_	_
+12	chất độc	chất độc	NOUN	N	_	11	_	_	_
+13	da cam	da cam	NOUN	N	_	12	_	_	SpaceAfter=No
+14	...	...	PUNCT	...	_	13	_	_	SpaceAfter=No
+
+1	nhân dân	nhân dân	NOUN	N	_	0	_	_	_
+2	VN	VN	NOUN	Ny	_	1	_	_	_
+3	đang	đang	X	R	_	2	_	_	_
+4	khắc phục	khắc phục	VERB	V	_	3	_	_	_
+5	hậu quả	hậu quả	NOUN	N	_	4	_	_	_
+6	chiến tranh	chiến tranh	NOUN	N	_	5	_	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	_	_	SpaceAfter=No
+
+1	hậu quả	hậu quả	NOUN	N	_	0	_	_	SpacesAfter=\n
+2	nghiêm trọng	nghiêm trọng	ADJ	A	_	1	_	_	_
+3	là	là	AUX	V	_	2	_	_	_
+4	hậu quả	hậu quả	NOUN	N	_	3	_	_	_
+5	chất độc	chất độc	NOUN	N	_	4	_	_	_
+6	da	da	NOUN	N	_	5	_	_	_
+7	cam	cam	NOUN	N	_	6	_	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	_	_	SpaceAfter=No
+
+1	tháng	tháng	NOUN	N	_	0	_	_	_
+2	3	3	NUM	M	NumType=Card	1	_	_	_
+3	-	-	PUNCT	-	_	2	_	_	_
+4	2005	2005	NUM	M	NumType=Card	3	_	_	_
+5	chúng tôi	chúng tôi	PROPN	P	_	4	_	_	_
+6	cùng	cùng	ADJ	A	_	5	_	_	_
+7	hội	hội	NOUN	N	_	6	_	_	_
+8	Hữu nghị pháp	Hữu nghị pháp	NOUN	Np	_	7	_	_	_
+9	-	-	PUNCT	-	_	8	_	_	_
+10	Việt	Việt	NOUN	Np	_	9	_	_	_
+11	sẽ	sẽ	X	R	_	10	_	_	_
+12	tổ chức	tổ chức	VERB	V	_	11	_	_	_
+13	hội thảo	hội thảo	NOUN	N	_	12	_	_	_
+14	quốc tế	quốc tế	NOUN	N	_	13	_	_	_
+15	về	về	ADP	E	_	14	_	_	_
+16	chất độc	chất độc	NOUN	N	_	15	_	_	_
+17	da	da	NOUN	N	_	16	_	_	_
+18	cam	cam	NOUN	N	_	17	_	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	_	_	SpaceAfter=No
+
+1	Cho	cho	X	X	_	0	_	_	_
+2	đến	đến	ADP	E	_	1	_	_	_
+3	giờ	giờ	NOUN	N	_	2	_	_	_
+4	có	có	VERB	V	_	3	_	_	SpacesAfter=\n
+5	nhiều	nhiều	ADJ	A	_	4	_	_	_
+6	cá nhân	cá nhân	NOUN	N	_	5	_	_	_
+7	và	và	SCONJ	CC	_	6	_	_	_
+8	tổ chức	tổ chức	VERB	V	_	7	_	_	_
+9	đăng	đăng	VERB	V	_	8	_	_	_
+10	ký	ký	VERB	V	_	9	_	_	_
+11	tham gia	tham gia	VERB	V	_	10	_	_	_
+12	với	với	ADP	E	_	11	_	_	_
+13	chúng tôi	chúng tôi	PROPN	P	_	12	_	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	rất	rất	X	R	_	1	_	_	_
+3	tự	tự	PROPN	P	_	2	_	_	_
+4	hào	hào	NOUN	N	_	3	_	_	_
+5	là	là	AUX	V	_	4	_	_	_
+6	người	người	NOUN	N	_	5	_	_	SpacesAfter=\n
+7	bạn	bạn	NOUN	N	_	6	_	_	_
+8	của	của	ADP	E	_	7	_	_	_
+9	VN	VN	NOUN	Ny	_	8	_	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	_	_	SpaceAfter=No
+
+1	hành động	hành động	NOUN	N	_	0	_	_	_
+2	của	của	ADP	E	_	1	_	_	_
+3	chúng tôi	chúng tôi	PROPN	P	_	2	_	_	_
+4	đòi quyền	đòi quyền	NOUN	N	_	3	_	_	_
+5	công bằng	công bằng	ADJ	A	_	4	_	_	_
+6	cho	cho	ADP	E	_	5	_	_	_
+7	người	người	NOUN	N	_	6	_	_	_
+8	dân	dân	NOUN	N	_	7	_	_	_
+9	VN	VN	NOUN	Ny	_	8	_	_	_
+10	bị	bị	VERB	V	_	9	_	_	SpacesAfter=\n
+11	nhiễm	nhiễm	VERB	V	_	10	_	_	_
+12	chất độc	chất độc	NOUN	N	_	11	_	_	_
+13	da cam	da cam	NOUN	N	_	12	_	_	_
+14	đã	đã	X	R	_	13	_	_	_
+15	diễn	diễn	VERB	V	_	14	_	_	_
+16	ra	ra	X	R	_	15	_	_	_
+17	từ	từ	ADP	E	_	16	_	_	_
+18	nhiều	nhiều	ADJ	A	_	17	_	_	_
+19	năm	năm	NOUN	N	_	18	_	_	_
+20	qua	qua	VERB	V	_	19	_	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	20	_	_	SpaceAfter=No
+
+1	tại	tại	ADP	E	_	0	_	_	_
+2	Pháp	pháp	NOUN	Np	_	1	_	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	_	_	_
+4	nhiều	nhiều	ADJ	A	_	3	_	_	_
+5	cá nhân	cá nhân	NOUN	N	_	4	_	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	_	_	_
+7	hội	hội	NOUN	N	_	6	_	_	SpacesAfter=\n
+8	đã	đã	X	R	_	7	_	_	_
+9	tham gia	tham gia	VERB	V	_	8	_	_	_
+10	cuộc	cuộc	NOUN	N	_	9	_	_	_
+11	vận động	vận động	VERB	V	_	10	_	_	_
+12	của	của	ADP	E	_	11	_	_	_
+13	chúng tôi	chúng tôi	PROPN	P	_	12	_	_	_
+14	chống	chống	VERB	V	_	13	_	_	_
+15	chất độc	chất độc	NOUN	N	_	14	_	_	_
+16	da	da	NOUN	N	_	15	_	_	_
+17	cam	cam	NOUN	N	_	16	_	_	_
+18	tại	tại	ADP	E	_	17	_	_	_
+19	VN	VN	NOUN	Ny	_	18	_	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	_	_	SpaceAfter=No
+
+1	đến	đến	ADP	E	_	0	_	_	_
+2	VN	VN	NOUN	Ny	_	1	_	_	_
+3	lần	lần	NOUN	N	_	2	_	_	SpacesAfter=\n
+4	này	này	PROPN	P	_	3	_	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	_	_	_
+6	hai	hai	NUM	M	NumType=Card	5	_	_	_
+7	người	người	NOUN	N	_	6	_	_	_
+8	như	như	CCONJ	C	_	7	_	_	_
+9	đang	đang	X	R	_	8	_	_	_
+10	trở lại	trở lại	VERB	V	_	9	_	_	_
+11	ngôi	ngôi	NOUN	Nc	_	10	_	_	_
+12	nhà	nhà	NOUN	N	_	11	_	_	_
+13	của	của	ADP	E	_	12	_	_	_
+14	mình	mình	PROPN	P	_	13	_	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	_	_	SpaceAfter=No
+
+1	Nguyên đại	Nguyên đại	ADP	E	_	0	_	_	_
+2	sứ	sứ	NOUN	N	_	1	_	_	_
+3	đầu tiên	đầu tiên	ADJ	A	_	2	_	_	_
+4	của	của	ADP	E	_	3	_	_	_
+5	VN	vn	NOUN	Ny	_	4	_	_	SpacesAfter=\n
+6	tại	tại	ADP	E	_	5	_	_	_
+7	Pháp	pháp	NOUN	Np	_	6	_	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	_	_	_
+9	ông	ông	NOUN	Nc	_	8	_	_	_
+10	Võ	võ	NOUN	Np	_	9	_	_	_
+11	Văn Sung	Văn Sung	NOUN	Np	_	10	_	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	_	_	_
+13	đã	đã	X	R	_	12	_	_	_
+14	nhấn mạnh	nhấn mạnh	VERB	V	_	13	_	_	SpaceAfter=No
+15	:	:	PUNCT	:	_	14	_	_	_
+16	"	"	PUNCT	"	_	15	_	_	SpaceAfter=No
+17	Hai	Hai	NUM	M	NumType=Card	16	_	_	_
+18	bạn	bạn	NOUN	N	_	17	_	_	_
+19	là	là	AUX	V	_	18	_	_	_
+20	người	người	NOUN	N	_	19	_	_	_
+21	Pháp	Pháp	NOUN	Np	_	20	_	_	_
+22	rất	rất	X	R	_	21	_	_	_
+23	vn	vn	ADJ	A	_	22	_	_	SpaceAfter=No
+24	"	"	PUNCT	"	_	23	_	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	_	_	SpaceAfter=No
+
+1	ông	ông	NOUN	Nc	_	0	_	_	_
+2	Võ	võ	NOUN	Np	_	1	_	_	SpacesAfter=\n
+3	Văn Sung	Văn Sung	NOUN	Np	_	2	_	_	_
+4	cho	cho	VERB	V	_	3	_	_	_
+5	biết	biết	VERB	V	_	4	_	_	SpaceAfter=No
+6	:	:	PUNCT	:	_	5	_	_	_
+7	"	"	PUNCT	"	_	6	_	_	SpaceAfter=No
+8	phong trào	phong trào	NOUN	N	_	7	_	_	_
+9	nhân	nhân	VERB	V	_	8	_	_	_
+10	dân	dân	NOUN	N	_	9	_	_	_
+11	Pháp	Pháp	NOUN	Np	_	10	_	_	_
+12	ủng hộ	ủng hộ	VERB	V	_	11	_	_	_
+13	VN	VN	NOUN	Ny	_	12	_	_	_
+14	chống	chống	VERB	V	_	13	_	_	_
+15	chiến tranh	chiến tranh	NOUN	N	_	14	_	_	_
+16	xâm lược	xâm lược	NOUN	N	_	15	_	_	_
+17	của	của	ADP	E	_	16	_	_	_
+18	thực dân	thực dân	NOUN	N	_	17	_	_	_
+19	Pháp	Pháp	NOUN	Np	_	18	_	_	_
+20	và Mỹ	và Mỹ	NOUN	Np	_	19	_	_	_
+21	rất	rất	X	R	_	20	_	_	_
+22	sôi nổi	sôi nổi	ADJ	A	_	21	_	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	22	_	_	SpaceAfter=No
+
+1	ông	ông	NOUN	Nc	_	0	_	_	_
+2	Henri Martin	Henri Martin	NOUN	Np	_	1	_	_	_
+3	đã	đã	X	R	_	2	_	_	_
+4	gửi	gửi	VERB	V	_	3	_	_	_
+5	thông điệp	thông điệp	VERB	V	_	4	_	_	_
+6	đến	đến	ADP	E	_	5	_	_	SpacesAfter=\n
+7	các	các	DET	L	_	6	_	_	_
+8	bạn	bạn	NOUN	N	_	7	_	_	_
+9	trẻ	trẻ	NOUN	N	_	8	_	_	_
+10	VN	VN	NOUN	Ny	_	9	_	_	SpaceAfter=No
+11	:	:	PUNCT	:	_	10	_	_	_
+12	"	"	PUNCT	"	_	11	_	_	SpaceAfter=No
+13	Các	Các	DET	L	_	12	_	_	_
+14	bạn	bạn	NOUN	N	_	13	_	_	_
+15	hôm	hôm	NOUN	N	_	14	_	_	_
+16	nay	nay	PROPN	P	_	15	_	_	_
+17	đón	đón	VERB	V	_	16	_	_	_
+18	tiếp	tiếp	VERB	V	_	17	_	_	_
+19	chúng tôi	chúng tôi	PROPN	P	_	18	_	_	_
+20	như	như	CCONJ	C	_	19	_	_	_
+21	những	những	DET	L	_	20	_	_	_
+22	người bạn	người bạn	NOUN	N	_	21	_	_	_
+23	thân thiết	thân thiết	ADJ	A	_	22	_	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	_	_	SpaceAfter=No
+
+1	tình	tình	NOUN	N	_	0	_	_	_
+2	hữu	hữu	NOUN	N	_	1	_	_	_
+3	nghị	nghị	VERB	V	_	2	_	_	_
+4	hai	hai	NUM	M	NumType=Card	3	_	_	_
+5	nước	nước	NOUN	N	_	4	_	_	_
+6	Việt	Việt	NOUN	Np	_	5	_	_	_
+7	-	-	PUNCT	-	_	6	_	_	_
+8	Pháp	Pháp	NOUN	Np	_	7	_	_	_
+9	đã	đã	X	R	_	8	_	_	_
+10	có	có	VERB	V	_	9	_	_	_
+11	từ	từ	ADP	E	_	10	_	_	_
+12	rất	rất	X	R	_	11	_	_	_
+13	lâu đời	lâu đời	ADJ	A	_	12	_	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	_	_	_
+15	từ	từ	ADP	E	_	14	_	_	_
+16	khi	khi	NOUN	N	_	15	_	_	_
+17	tôi chưa	tôi chưa	ADP	E	_	16	_	_	SpacesAfter=\n
+18	chào đời	chào đời	NOUN	N	_	17	_	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	_	_	SpaceAfter=No
+
+1	từ	từ	ADP	E	_	0	_	_	_
+2	những	những	DET	L	_	1	_	_	_
+3	năm	năm	NOUN	N	_	2	_	_	_
+4	1920	1920	NUM	M	NumType=Card	3	_	_	_
+5	khi	khi	NOUN	N	_	4	_	_	_
+6	Bác Hồ	Bác Hồ	NOUN	Np	_	5	_	_	_
+7	là	là	AUX	V	_	6	_	_	_
+8	người	người	NOUN	N	_	7	_	_	_
+9	tham gia	tham gia	VERB	V	_	8	_	_	_
+10	sáng	sáng	ADJ	A	_	9	_	_	_
+11	lập	lập	VERB	V	_	10	_	_	_
+12	đảng	đảng	NOUN	N	_	11	_	_	_
+13	Cộng	cộng	NOUN	Np	_	12	_	_	_
+14	sản	sản	VERB	V	_	13	_	_	SpacesAfter=\n
+15	Pháp	Pháp	NOUN	Np	_	14	_	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	_	_	SpaceAfter=No
+
+1	Tôi	Tôi	PROPN	P	_	0	_	_	_
+2	chỉ	chỉ	X	R	_	1	_	_	_
+3	là	là	AUX	V	_	2	_	_	_
+4	người	người	NOUN	N	_	3	_	_	_
+5	phát triển	phát triển	VERB	V	_	4	_	_	_
+6	thêm tình	thêm tình	VERB	V	_	5	_	_	_
+7	hữu	hữu	NUM	M	NumType=Card	6	_	_	_
+8	nghị	nghị	NOUN	N	_	7	_	_	_
+9	đó	đó	PROPN	P	_	8	_	_	SpaceAfter=No
+10	"	"	PUNCT	"	_	9	_	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	_	_	SpaceAfter=No
+
+1	Nhiều	Nhiều	ADJ	A	_	0	_	_	_
+2	người	người	NOUN	N	_	1	_	_	_
+3	đã	đã	X	R	_	2	_	_	_
+4	xúc động	xúc động	VERB	V	_	3	_	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	4	_	_	_
+6	"	"	PUNCT	"	_	5	_	_	SpaceAfter=No
+7	Chúng ta	chúng ta	PROPN	P	_	6	_	_	_
+8	phải	phải	VERB	V	_	7	_	_	_
+9	đặt tên	đặt tên	VERB	V	_	8	_	_	_
+10	VN	VN	NOUN	Ny	_	9	_	_	_
+11	cho	cho	ADP	E	_	10	_	_	_
+12	hai	hai	NUM	M	NumType=Card	11	_	_	_
+13	người	người	NOUN	Nc	_	12	_	_	_
+14	bạn	bạn	NOUN	N	_	13	_	_	_
+15	của	của	ADP	E	_	14	_	_	_
+16	chúng ta	chúng ta	PROPN	P	_	15	_	_	_
+17	là	là	AUX	V	_	16	_	_	_
+18	hồ henri	hồ henri	ADP	E	_	17	_	_	SpacesAfter=\n
+19	martin	martin	NOUN	N	_	18	_	_	_
+20	và	và	SCONJ	CC	_	19	_	_	_
+21	Hồ	Hồ	NOUN	Np	_	20	_	_	_
+22	Raymonde	Raymonde	NOUN	Nb	_	21	_	_	_
+23	Dien	Dien	NOUN	Np	_	22	_	_	SpaceAfter=No
+24	"	"	PUNCT	"	_	23	_	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	_	_	SpaceAfter=No
+
+1	cuộc đời	cuộc đời	NOUN	N	_	0	_	_	_
+2	dưới	dưới	ADP	E	_	1	_	_	_
+3	vành	vành	NOUN	N	_	2	_	_	_
+4	mũ	mũ	NOUN	N	_	3	_	_	_
+5	thám tử	thám tử	NOUN	N	_	4	_	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	_	_	SpaceAfter=No
+
+1	đòi	đòi	VERB	V	_	0	_	_	_
+2	lại	lại	X	R	_	1	_	_	_
+3	một	một	NUM	M	NumType=Card	2	_	_	_
+4	cuộc đời	cuộc đời	NOUN	N	_	3	_	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	4	_	_	_
+6	đứa	đứa	NOUN	Nc	_	5	_	_	_
+7	con	con	NOUN	N	_	6	_	_	_
+8	bị	bị	VERB	V	_	7	_	_	_
+9	đánh cắp	đánh cắp	VERB	V	_	8	_	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	_	_	SpaceAfter=No
+
+1	chuyến	chuyến	NOUN	N	_	0	_	_	_
+2	bay	bay	VERB	V	_	1	_	_	_
+3	sang	sang	VERB	V	_	2	_	_	_
+4	châu Âu	châu Âu	NOUN	Np	_	3	_	_	_
+5	phải	phải	VERB	V	_	4	_	_	_
+6	hoãn	hoãn	VERB	V	_	5	_	_	_
+7	lại	lại	X	R	_	6	_	_	_
+8	do	do	ADP	E	_	7	_	_	_
+9	thời	thời	NOUN	N	_	8	_	_	_
+10	tiết	tiết	VERB	V	_	9	_	_	SpacesAfter=\n
+11	xấu	xấu	ADJ	A	_	10	_	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	_	_	SpaceAfter=No
+
