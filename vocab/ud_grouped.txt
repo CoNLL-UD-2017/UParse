@@ -1,0 +1,105 @@
+Group: Germanic
+UD_Danish
+UD_Dutch
+UD_Dutch-LassySmall
+UD_English
+UD_English-LinES
+UD_German
+UD_Norwegian-Bokmaal
+UD_Norwegian-Nynorsk
+UD_Swedish
+UD_Swedish-LinES
+
+Group: Semitic
+UD_Arabic
+UD_Hebrew
+
+Group: Indic
+UD_Hindi
+UD_Urdu
+
+Group: Romance
+UD_Catalan
+UD_French
+UD_French-Sequoia
+UD_Italian
+UD_Portuguese
+UD_Portuguese-BR
+UD_Romanian
+UD_Spanish
+UD_Spanish-AnCora
+
+Group: Slavic
+UD_Bulgarian
+UD_Croatian
+UD_Czech
+UD_Czech-CAC
+UD_Polish
+UD_Russian
+UD_Russian-SynTagRus
+UD_Slovak
+UD_Slovenian
+UD_Slovenian-SST
+
+Group: Classic
+UD_Gothic
+UD_Latin
+UD_Latin-ITTB
+UD_Latin-PROIEL
+UD_Ancient_Greek-PROIEL
+UD_Old_Church_Slavonic
+
+Group: Finnic
+UD_Finnish
+UD_Finnish-FTB
+
+Group: ParTUT
+UD_English-ParTUT
+UD_French-ParTUT
+UD_Italian-ParTUT
+
+Group: Turkic-DEL
+UD_Turkish
+UD_Kazakh
+UD_Uyghur
+
+Group: UD_Estonian
+UD_Estonian
+UD_Finnish
+UD_Finnish-FTB
+
+Group: UD_Hungarian
+UD_Estonian
+UD_Hungarian
+UD_Finnish
+UD_Finnish-FTB
+
+Group: UD_Galician
+UD_Galician
+UD_Galician-TreeGal
+UD_Spanish
+UD_Spanish-AnCora
+
+Group: UD_Ukrainian
+UD_Ukrainian
+UD_Bulgarian
+UD_Croatian
+UD_Czech
+UD_Czech-CAC
+UD_Polish
+UD_Russian
+UD_Russian-SynTagRus
+UD_Slovak
+UD_Slovenian
+UD_Slovenian-SST
+
+Group: UD_Hindi
+UD_Hindi
+
+Group: Czech
+UD_Czech
+UD_Czech-CAC
+
+Group: Russian
+UD_Russian
+UD_Russian-SynTagRus

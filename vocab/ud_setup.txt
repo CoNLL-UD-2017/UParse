@@ -1,0 +1,64 @@
+Ancient Greek	UD_Ancient_Greek	UD_Ancient_Greek	145	grc	grc
+Ancient Greek	UD_Ancient_Greek-PROIEL	UD_Ancient_Greek-PROIEL	145	grc	grc_proiel
+Arabic	UD_Arabic	UD_Arabic	200	ar	ar
+Basque	UD_Basque	UD_Basque	145	eu	eu
+Bulgarian	UD_Bulgarian	UD_Bulgarian	145	bg	bg
+Catalan	UD_Catalan	UD_Catalan	145	ca	ca
+Chinese	UD_Chinese	UD_Chinese	145	zh	zh
+Croatian	UD_Croatian	UD_Croatian	145	hr	hr
+Czech	UD_Czech	UD_Czech	145	cs	cs
+Czech	UD_Czech-CAC	UD_Czech-CAC	200	cs	cs_cac
+Czech	UD_Czech-CLTT	none	none	cs	cs_cltt
+Danish	UD_Danish	UD_Danish	145	da	da
+Dutch	UD_Dutch	UD_Dutch	145	nl	nl
+Dutch	UD_Dutch-LassySmall	UD_Dutch-LassySmall	145	nl	nl_lassysmall
+English	UD_English	UD_English	145	en	en
+English	UD_English-LinES	UD_English-LinES	145	en	en_lines
+Estonian	UD_Estonian	UD_Estonian	145	et	et
+Finnish	UD_Finnish	UD_Finnish	185	fi	fi
+Finnish	UD_Finnish-FTB	UD_Finnish-FTB	185	fi	fi_ftb
+French	UD_French	UD_French	145	fr	fr
+French	UD_French-Sequoia	UD_French-Sequoia	145	fr	fr_sequoia
+Galician	UD_Galician	UD_Galician	145	gl	gl
+Galician	UD_Galician-TreeGal	UD_Galician-TreeGal	145	gl	gl_treegal
+German	UD_German	UD_German	145	de	de
+Gothic	UD_Gothic	Classic	145	got	got
+Greek	UD_Greek	UD_Greek	145	el	el
+Hebrew	UD_Hebrew	UD_Hebrew	145	he	he
+Hindi	UD_Hindi	UD_Hindi	145	hi	hi
+Hungarian	UD_Hungarian	UD_Hungarian	145	hu	hu
+Indonesian	UD_Indonesian	UD_Indonesian	145	id	id
+Italian	UD_Italian	UD_Italian	145	it	it
+Japanese	UD_Japanese	UD_Japanese	145	ja	ja
+Kazakh	UD_Kazakh	Turkic-DEL	145	kk	kk
+Korean	UD_Korean	UD_Korean	145	ko	ko
+Latin	UD_Latin	UD_Latin	145	la	la
+Latin	UD_Latin-ITTB	UD_Latin-ITTB	145	la	la_ittb
+Latin	UD_Latin-PROIEL	UD_Latin-PROIEL	145	la	la_proiel
+Latvian	UD_Latvian	UD_Latvian	145	lv	lv
+Norwegian	UD_Norwegian-Bokmaal	UD_Norwegian-Bokmaal	145	no	no_bokmaal
+Norwegian	UD_Norwegian-Nynorsk	UD_Norwegian-Nynorsk	145	no	no_nynorsk
+Old Church Slavonic	UD_Old_Church_Slavonic	UD_Old_Church_Slavonic	145	cu	cu
+Persian	UD_Persian	UD_Persian	145	fa	fa
+Polish	UD_Polish	UD_Polish	145	pl	pl
+Portuguese	UD_Portuguese	UD_Portuguese	180	pt	pt
+Portuguese	UD_Portuguese-BR	UD_Portuguese-BR	180	pt	pt_br
+Romanian	UD_Romanian	UD_Romanian	145	ro	ro
+Russian	UD_Russian	UD_Russian	145	ru	ru
+Russian	UD_Russian-SynTagRus	UD_Russian-SynTagRus	145	ru	ru_syntagrus
+Slovak	UD_Slovak	UD_Slovak	145	sk	sk
+Slovenian	UD_Slovenian	UD_Slovenian	145	sl	sl
+Slovenian	UD_Slovenian-SST	UD_Slovenian-SST	145	sl_sst	sl_sst
+Spanish	UD_Spanish	UD_Spanish	145	es	es
+Spanish	UD_Spanish-AnCora	UD_Spanish-AnCora	145	es	es_ancora
+Swedish	UD_Swedish	UD_Swedish	145	sv	sv
+Swedish	UD_Swedish-LinES	UD_Swedish-LinES	145	sv	sv_lines
+Turkish	UD_Turkish	UD_Turkish	145	tr	tr
+Ukrainian	UD_Ukrainian	UD_Ukrainian	145	uk	uk
+Urdu	UD_Urdu	UD_Urdu	145	ur	ur
+Uyghur	UD_Uyghur	Turkic-DEL	145	ur	ur
+Vietnamese	UD_Vietnamese	UD_Vietnamese	145	vi	vi
+Buryat	UD_Buryat	Russian-DEL	145	brx	brx
+Kurmanji	UD_Kurmanji	Persian-DEL	145	kmr	kmr
+North Sámi	UD_North_Sami	Finnic-DEL	145	sme	sme
+Upper Sorbian	UD_Upper_Sorbian	Czech-DEL	145	hsb	hsb

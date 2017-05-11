@@ -1,0 +1,13 @@
+Portuguese_BR: 175
+UD_Galician
+Romance
+
+Indonesian: 151
+
+Czech-CLLT: 428
+
+Finnish: 178
+Finnic
+UD_Hungarian
+UD_Estonian
+
