@@ -105,34 +105,35 @@ def process(indir, outdir, codedir, runType):
 			model = 'Czech-DEL'
 		print('Using model', model)
 
-		print('Preprocess input...')
-		fout = open(inputFile, 'w')
-		with open(infile) as f:
-			word_cnt = 0
-			sent_cnt = 0
-			maxlen = int(model2len[model])
-			for line in f:
-				line = line.strip()
-				
-				if line.startswith('#'):
-					continue
-				
-				if line == '':
-					fout.write('\n')
-					word_cnt = 0
-					sent_cnt += 1
-				else:
-					tokens = line.split('\t')
-					assert len(tokens) == 10
-					wid = tokens[0]
-					if '-' in wid or '.' in wid or word_cnt >= maxlen:
+		if not useUDpipe:
+			print('Preprocess input...')
+			with open(infile) as f:
+				word_cnt = 0
+				sent_cnt = 0
+				maxlen = int(model2len[model])
+				fout = open(inputFile, 'w')
+				for line in f:
+					line = line.strip()
+					
+					if line.startswith('#'):
 						continue
+					
+					if line == '':
+						fout.write('\n')
+						word_cnt = 0
+						sent_cnt += 1
 					else:
-						line = '\t'.join(tokens[:6]) + '\t' + str(word_cnt) + '\t' + '\t'.join(tokens[7:])
-						word_cnt += 1
-					fout.write(line + '\n')
-		fout.close()
-		print('Finished preprocessing!')
+						tokens = line.split('\t')
+						assert len(tokens) == 10
+						wid = tokens[0]
+						if '-' in wid or '.' in wid or word_cnt >= maxlen:
+							continue
+						else:
+							line = '\t'.join(tokens[:6]) + '\t' + str(word_cnt) + '\t' + '\t'.join(tokens[7:])
+							word_cnt += 1
+						fout.write(line + '\n')
+			fout.close()
+			print('Finished preprocessing!')
 
 		if runType == 'dense_dist_udpipe' and useUDpipe:
 			print('Parse using UDPipe!')
