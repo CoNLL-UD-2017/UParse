@@ -31,7 +31,7 @@ def load_depdist(model, codedir):
 	dep_dist_dir = os.path.join(codedir, 'ud-dep-dist')
 	tb_deps = os.listdir(dep_dist_dir)
 	dep_dist = {}
-	dep_file = 'Czech-DEL'  # default delex model
+	dep_file = 'UD-Czech'  # default delex model
 
 	if model in tb_deps:
 		dep_file = model
@@ -70,10 +70,15 @@ def process(indir, outdir, codedir, runType):
 	data_files = load_json(indir)
 	deprel_vocab = load_deprel(codedir)
 	model2len, lcode2model, ltcode2model = load_setup_file(codedir)
-
 	models = os.listdir(os.path.join(codedir, 'conll2017_models'))
 
+	udpipe_models = {}
+	for fname in os.listdir(os.path.join(codedir, 'udpipe_models')):
+		tb_name = 'ud_' + fname.split('-')[0]
+		udpipe_models[tb_name] = fname
+
 	for filename in data_files:
+		useUDpipe = False
 		ltcode = data_files[filename]['ltcode']
 		lcode = data_files[filename]['lcode']
 		outname = data_files[filename]['outfile']
@@ -82,17 +87,24 @@ def process(indir, outdir, codedir, runType):
 		elif lcode in lcode2model:
 			model = lcode2model[lcode]
 		else:
-			model = lcode2model['hsb']
-
-		# check model
-		if model not in models or model not in model2len:
 			model = 'Czech-DEL'
-		print('Using model', model)
 
 		infile = os.path.join(indir, filename)
 		inputFile = os.path.join(outdir, 'incleaned-' + filename)
 		outputFile = os.path.join(outdir, 'outcleaned-' + outname)
 		finalOutFile = os.path.join(outdir, outname)
+
+		# check if we should use udpipe model
+		if runType == 'dense_dist_udpipe':
+			_model = model.lower()
+			if _model in udpipe_models:
+				useUDpipe = True
+				continue
+
+		# check model
+		if model not in models or model not in model2len:
+			model = 'Czech-DEL'
+		print('Using model', model)
 
 		print('Preprocess input...')
 		fout = open(inputFile, 'w')
@@ -123,19 +135,24 @@ def process(indir, outdir, codedir, runType):
 		fout.close()
 		print('Finished preprocessing!')
 
-		print('Parse file:', inputFile)
-		modelPath = codedir + '/conll2017_models/' + model + '/model_0.001.tune.t7'
-		classifier = codedir + '/conll2017_models/' + model + '/lbl_lassifier.t7'
-		command = 'th ' + codedir + '/dense_multi_parser.lua --modelPath ' + modelPath + ' --classifierPath ' + classifier + ' --input ' + inputFile + ' --output ' + outputFile + ' --mstalg ChuLiuEdmonds'
-		os.system(command)
-		print('Finished parsing!')
-
-		print('Post-process output..')
-		if runType == 'dense':
-			postprocess(infile, outputFile, finalOutFile, deprel_vocab)
+		if runType == 'dense_dist_udpipe' and useUDpipe:
+			print('Parse using UDPipe!')
+			udpipe_command = codedir + '/udpipe-1.1.0-bin/bin-linux64/udpipe --input conllu --output conllu --parse udpipe_models/' + udpipe_models[model.lower()] + ' ' + infile + ' > ' + finalOutFile
+			os.system(udpipe_command)
 		else:
-			postprocess_dist(infile, outputFile, finalOutFile, model, codedir, deprel_vocab)
-		print('Finished post-processing!')
+			print('Parse file:', inputFile)
+			modelPath = codedir + '/conll2017_models/' + model + '/model_0.001.tune.t7'
+			classifier = codedir + '/conll2017_models/' + model + '/lbl_lassifier.t7'
+			command = 'th ' + codedir + '/dense_multi_parser.lua --modelPath ' + modelPath + ' --classifierPath ' + classifier + ' --input ' + inputFile + ' --output ' + outputFile + ' --mstalg ChuLiuEdmonds'
+			os.system(command)
+			print('Finished parsing!')
+
+			print('Post-process output..')
+			if runType == 'dense':
+				postprocess(infile, outputFile, finalOutFile, deprel_vocab)
+			else:
+				postprocess_dist(infile, outputFile, finalOutFile, model, codedir, deprel_vocab)
+			print('Finished post-processing!')
 
 
 def postprocess(infile, predFile, outFile, deprel_vocab):
