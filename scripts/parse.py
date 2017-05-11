@@ -99,7 +99,6 @@ def process(indir, outdir, codedir, runType):
 			_model = model.lower()
 			if _model in udpipe_models:
 				useUDpipe = True
-				continue
 
 		# check model
 		if model not in models or model not in model2len:
