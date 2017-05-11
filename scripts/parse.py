@@ -31,7 +31,7 @@ def load_depdist(model, codedir):
 	dep_dist_dir = os.path.join(codedir, 'ud-dep-dist')
 	tb_deps = os.listdir(dep_dist_dir)
 	dep_dist = {}
-	dep_file = 'UD_Czech'  # default delex model
+	dep_file = 'Czech-DEL'  # default delex model
 
 	if model in tb_deps:
 		dep_file = model
@@ -71,6 +71,8 @@ def process(indir, outdir, codedir, runType):
 	deprel_vocab = load_deprel(codedir)
 	model2len, lcode2model, ltcode2model = load_setup_file(codedir)
 
+	models = os.listdir(os.path.join(codedir, 'conll2017_models'))
+
 	for filename in data_files:
 		ltcode = data_files[filename]['ltcode']
 		lcode = data_files[filename]['lcode']
@@ -81,6 +83,11 @@ def process(indir, outdir, codedir, runType):
 			model = lcode2model[lcode]
 		else:
 			model = lcode2model['hsb']
+
+		# check model
+		if model not in models or model not in model2len:
+			model = 'Czech=DEL'
+		print('Using model', model)
 
 		infile = os.path.join(indir, filename)
 		inputFile = os.path.join(outdir, 'incleaned-' + filename)
