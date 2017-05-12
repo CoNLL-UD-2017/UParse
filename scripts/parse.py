@@ -176,7 +176,7 @@ def postprocess(infile, predFile, outFile, deprel_vocab):
 	# align sentences
 	i = 0
 	j = 0
-	root = True
+	num_root = 0
 	child_root_pos = -1
 	fout = open(outFile, 'w')
 	with open(infile) as f:
@@ -187,7 +187,7 @@ def postprocess(infile, predFile, outFile, deprel_vocab):
 				fout.write(line + '\n')
 			elif line == '':
 				assert line == pred_line
-				root = True
+				num_root = 0
 				child_root_pos = -1
 				fout.write(line + '\n')
 				i += 1
@@ -216,19 +216,23 @@ def postprocess(infile, predFile, outFile, deprel_vocab):
 					fields[4] = tokens[4]
 					fields[5] = tokens[5]
 					if fields[6] == '0' and fields[7] != 'root':
-						fields[7] = 'root'
-						root = False
-						child_root_pos = fields[0]
+						if num_root == 0:
+							fields[7] = 'root'
+							num_root += 1
+							child_root_pos = fields[0]
+						else:
+							fields[6] = child_root_pos
+							fields[7] = 'ccomp'
 					elif fields[6] == '0' and fields[7] == 'root':
-						if root:
-							root = False
+						if num_root == 0:
+							num_root += 1
 							child_root_pos = fields[0]
 						else:  
 						# change prediction of there is already a root
-						# set parent = child of root
+						# set parent to the child root
 							fields[6] = child_root_pos
 							fields[7] = 'ccomp'
-						# print(fields)
+						
 					pred_line = '\t'.join(fields)
 					fout.write(pred_line + '\n')
 					i += 1
@@ -246,7 +250,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 	# align sentences
 	i = 0
 	j = 0
-	root = True
+	num_root = 0
 	child_root_pos = -1
 	prev_pos = ''
 	fout = open(outFile, 'w')
@@ -259,7 +263,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 			elif line == '':
 				assert line == pred_line
 				# new sentence restart counter
-				root = True
+				num_root = 0
 				child_root_pos = -1
 				fout.write(line + '\n')
 				i += 1
@@ -294,12 +298,16 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 					fields[4] = tokens[4]
 					fields[5] = tokens[5]
 					if fields[6] == '0' and fields[7] != 'root':
-						fields[7] = 'root'
-						root = False
-						child_root_pos = fields[0]
+						if num_root == 0:
+							fields[7] = 'root'
+							num_root += 1
+							child_root_pos = fields[0]
+						else:
+							fields[6] = child_root_pos
+							fields[7] = 'ccomp'
 					elif fields[6] == '0' and fields[7] == 'root':
-						if root:
-							root = False
+						if num_root == 0:
+							num_root += 1
 							child_root_pos = fields[0]
 						else:  
 						# change prediction of there is already a root
@@ -309,7 +317,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 
 					prev_pos = fields[3]
 					pred_line = '\t'.join(fields)
-					fout.write(pred_line + '\n')
+					fout.write(pred_line + '---' + str(num_root) + '\n')
 					i += 1
 			j += 1
 
@@ -320,5 +328,14 @@ if __name__=="__main__":
   codedir = sys.argv[3]
   runType = sys.argv[4]
   process(input_dir, output_dir, codedir, runType)
+
+  # infile = sys.argv[1]
+  # predFile = sys.argv[2]
+  # outFile = sys.argv[3]
+  # model = 'UD_Basque'
+  # codedir = '/home/claravania/Documents/projects/UParse'
+  # deprel_vocab = load_deprel(codedir)
+  # postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab)
+  # postprocess(infile, predFile, outFile, deprel_vocab)
 
 
