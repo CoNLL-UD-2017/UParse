@@ -64,5 +64,5 @@ Turkish	UD_Turkish	UD_Turkish	145	tr	tr
 Ukrainian	UD_Ukrainian	UD_Ukrainian	145	uk	uk
 Upper Sorbian	UD_Upper_Sorbian	Czech-DEL	145	hsb	hsb
 Urdu	UD_Urdu	UD_Urdu	145	ur	ur
-Uyghur	UD_Uyghur	Turkic-DEL	145	ur	ur
+Uyghur	UD_Uyghur	Turkic-DEL	145	ug	ug
 Vietnamese	UD_Vietnamese	UD_Vietnamese	145	vi	vi

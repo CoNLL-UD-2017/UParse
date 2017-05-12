@@ -50,10 +50,12 @@ def load_setup_file(codedir):
 	ltcode2model = {}
 	lcode2model = {}
 	model2len = {}
+	ltcode2tb = {}
 	with open(setup_file) as f:
 		for line in f:
 			fields = line.strip().split('\t')
 			assert len(fields) == 6
+			tb_name = fields[1].lower().replace('-', '_')
 			model = fields[2]
 			maxlen = fields[3]
 			lcode = fields[4]
@@ -62,24 +64,30 @@ def load_setup_file(codedir):
 				model2len[model] = maxlen
 			if ltcode != 'none':
 				ltcode2model[ltcode] = model
+				ltcode2tb[ltcode] = tb_name
 			if lcode == ltcode:
 				lcode2model[lcode] = model
-	return model2len, lcode2model, ltcode2model
+	return model2len, lcode2model, ltcode2model, ltcode2tb
 
 
 def process(indir, outdir, codedir, runType):
 	data_files = load_json(indir)
 	deprel_vocab = load_deprel(codedir)
-	model2len, lcode2model, ltcode2model = load_setup_file(codedir)
+	model2len, lcode2model, ltcode2model, ltcode2tb = load_setup_file(codedir)
 	models = os.listdir(os.path.join(codedir, 'conll2017_models'))
 
-	udpipe_models = {}
-	for fname in os.listdir(os.path.join(codedir, 'udpipe_models')):
-		tb_name = 'ud_' + fname.split('-')[0]
-		udpipe_models[tb_name] = fname
+	if runType == 'dense_dist_udpipe':
+		udpipe_models = {}
+		print('Load udpipe models...')
+		for fname in os.listdir(os.path.join(codedir, 'udpipe_models')):
+			tb_name = 'ud_' +  fname.split('-')[0]
+			udpipe_models[tb_name] = fname
+			print(tb_name, fname)
+		print()
 
 	for filename in data_files:
 		useUDpipe = False
+		tb_name = ''
 		ltcode = data_files[filename]['ltcode']
 		lcode = data_files[filename]['lcode']
 		outname = data_files[filename]['outfile']
@@ -97,14 +105,15 @@ def process(indir, outdir, codedir, runType):
 
 		# check if we should use udpipe model
 		if runType == 'dense_dist_udpipe':
-			_model = model.lower()
-			if _model in udpipe_models:
-				useUDpipe = True
-
-		# check model
-		if model not in models or model not in model2len:
-			model = 'Czech-DEL'
-		print('Using model', model)
+			if ltcode in ltcode2tb:
+				tb_name = ltcode2tb[ltcode]
+				if tb_name in udpipe_models:
+					useUDpipe = True
+		else:
+			# check model
+			if model not in models or model not in model2len:
+				model = 'Czech-DEL'
+			print('Parse using DeNse, using model', model)
 
 		if not useUDpipe:
 			print('Preprocess input...')
@@ -138,7 +147,8 @@ def process(indir, outdir, codedir, runType):
 
 		if runType == 'dense_dist_udpipe' and useUDpipe:
 			print('Parse using UDPipe!')
-			udpipe_command = codedir + '/udpipe-1.1.0-bin/bin-linux64/udpipe --input conllu --output conllu --parse udpipe_models/' + udpipe_models[model.lower()] + ' ' + infile + ' > ' + finalOutFile
+			print('Parse file:', infile)
+			udpipe_command = codedir + '/udpipe-1.1.0-bin/bin-linux64/udpipe --input conllu --output conllu --parse udpipe_models/' + udpipe_models[tb_name] + ' ' + infile + ' > ' + finalOutFile
 			os.system(udpipe_command)
 		else:
 			print('Parse file:', inputFile)
@@ -237,42 +247,46 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 			pred_line = pred_lines[i].strip()
 			if line.startswith('#'):
 				fout.write(line + '\n')
-				j += 1
-				continue
 			elif line == '':
 				assert line == pred_line
-				i += 1
-				j += 1
 				# new sentence restart counter
 				root = True
 				root_pos = -1
 				fout.write(line + '\n')
+				i += 1
 			elif line != '' and pred_line == '':
 				tokens = line.split('\t')
-				tokens[6] = str(int(tokens[0]) - 1)
-				key = tuple([tokens[3], prev_pos])
-				if key in deprel_dist:
-					rel = deprel_dist[key]
+				wid = tokens[0]
+				if '-' in wid or '.' in wid:
+					fout.write(line + '\n')
 				else:
-					rand_idx = randint(0, len(deprel_vocab) - 1)
-					rel = deprel_vocab[rand_idx]
-				tokens[7] = rel
-				new_line = '\t'.join(tokens)
-				fout.write(new_line + '\n')
-				prev_pos = tokens[3]
-				j += 1
+					tokens[6] = str(int(wid) - 1)
+					key = tuple([tokens[3], prev_pos])
+					if key in deprel_dist:
+						rel = deprel_dist[key]
+					else:
+						rand_idx = randint(0, len(deprel_vocab) - 1)
+						rel = deprel_vocab[rand_idx]
+					tokens[7] = rel
+					new_line = '\t'.join(tokens)
+					fout.write(new_line + '\n')
+					prev_pos = tokens[3]
 			else:
 				# read line
 				tokens = line.split('\t')
 				assert len(tokens) == 10
-				if '-' in tokens[0]:
+				if '-' in tokens[0] or '.' in tokens[0]:
 					fout.write(line + '\n')
 					j += 1
 				else:
 					fields = pred_line.split('\t')
 					assert len(fields) == 10
+					fields[2] = fields[2]
+					fields[4] = fields[4]
 					fields[5] = tokens[5]
-					if fields[7] == 'root':
+					if fields[6] == '0' and fields[7] != 'root':
+						fields[6] = int(fields[0]) - 1
+					if fields[6] == '0' and fields[7] == 'root':
 						if root:
 							root = False
 							root_pos = fields[0]
@@ -283,7 +297,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 					pred_line = '\t'.join(fields)
 					fout.write(pred_line + '\n')
 					i += 1
-					j += 1
+			j += 1
 
 
 if __name__=="__main__":
