@@ -281,12 +281,17 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 				else:
 					fields = pred_line.split('\t')
 					assert len(fields) == 10
-					fields[2] = fields[2]
-					fields[4] = fields[4]
+					fields[2] = tokens[2]
+					fields[4] = tokens[4]
 					fields[5] = tokens[5]
 					if fields[6] == '0' and fields[7] != 'root':
-						fields[6] = int(fields[0]) - 1
-					if fields[6] == '0' and fields[7] == 'root':
+						if fields[0] == '1':
+							fields[7] = 'root'
+							root = False
+							root_pos = fields[0]
+						else:
+							fields[6] = str(int(fields[0]) - 1)
+					elif fields[6] == '0' and fields[7] == 'root':
 						if root:
 							root = False
 							root_pos = fields[0]
