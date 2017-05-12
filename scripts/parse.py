@@ -22,6 +22,7 @@ def load_deprel(codedir):
 		cnt = 0
 		for line in f:
 			line = line.strip()
+			# only for random generator, don't want to include root!
 			if line != 'root':
 				valid_deprel[cnt] = line
 				cnt += 1
@@ -147,11 +148,11 @@ def process(indir, outdir, codedir, runType):
 
 		if runType == 'dense_dist_udpipe' and useUDpipe:
 			print('Parse using UDPipe!')
-			print('Parse file:', infile)
+			print('Parse input file:', infile)
 			udpipe_command = codedir + '/udpipe-1.1.0-bin/bin-linux64/udpipe --input conllu --output conllu --parse udpipe_models/' + udpipe_models[tb_name] + ' ' + infile + ' > ' + finalOutFile
 			os.system(udpipe_command)
 		else:
-			print('Parse file:', inputFile)
+			print('Parse preprocessed file of:', infile)
 			modelPath = codedir + '/conll2017_models/' + model + '/model_0.001.tune.t7'
 			classifier = codedir + '/conll2017_models/' + model + '/lbl_lassifier.t7'
 			command = 'th ' + codedir + '/dense_multi_parser.lua --modelPath ' + modelPath + ' --classifierPath ' + classifier + ' --input ' + inputFile + ' --output ' + outputFile + ' --mstalg ChuLiuEdmonds'
@@ -176,7 +177,7 @@ def postprocess(infile, predFile, outFile, deprel_vocab):
 	i = 0
 	j = 0
 	root = True
-	root_pos = -1
+	child_root_pos = -1
 	fout = open(outFile, 'w')
 	with open(infile) as f:
 		for line in f:
@@ -184,48 +185,54 @@ def postprocess(infile, predFile, outFile, deprel_vocab):
 			pred_line = pred_lines[i].strip()
 			if line.startswith('#'):
 				fout.write(line + '\n')
-				j += 1
-				continue
 			elif line == '':
 				assert line == pred_line
-				i += 1
-				j += 1
 				root = True
-				root_pos = -1
+				child_root_pos = -1
 				fout.write(line + '\n')
+				i += 1
 			elif line != '' and pred_line == '':
 				tokens = line.split('\t')
-				tokens[6] = str(int(tokens[0]) - 1)
-				rand_idx = randint(0, len(deprel_vocab) - 1)
-				tokens[7] = deprel_vocab[rand_idx]
-				new_line = '\t'.join(tokens)
-				fout.write(new_line + '\n')
-				j += 1
+				wid = tokens[0]
+				if '-' in wid or '.' in wid:
+					fout.write(line + '\n')
+				else:
+					# set parent = prev word
+					tokens[6] = str(int(wid) - 1)
+					rand_idx = randint(0, len(deprel_vocab) - 1)
+					tokens[7] = deprel_vocab[rand_idx]
+					new_line = '\t'.join(tokens)
+					fout.write(new_line + '\n')
 			else:
 				# read line
 				tokens = line.split('\t')
 				assert len(tokens) == 10
 				if '-' in tokens[0] or '.' in tokens[0]:
 					fout.write(line + '\n')
-					j += 1
 				else:
 					fields = pred_line.split('\t')
 					assert len(fields) == 10
 					fields[2] = tokens[2]
 					fields[4] = tokens[4]
 					fields[5] = tokens[5]
-					if fields[7] == 'root':
+					if fields[6] == '0' and fields[7] != 'root':
+						fields[7] = 'root'
+						root = False
+						child_root_pos = fields[0]
+					elif fields[6] == '0' and fields[7] == 'root':
 						if root:
 							root = False
-							root_pos = fields[0]
-						else:  # change prediction of there is already a root
-							fields[6] = root_pos
+							child_root_pos = fields[0]
+						else:  
+						# change prediction of there is already a root
+						# set parent = child of root
+							fields[6] = child_root_pos
 							fields[7] = 'ccomp'
 						# print(fields)
 					pred_line = '\t'.join(fields)
 					fout.write(pred_line + '\n')
 					i += 1
-					j += 1
+			j += 1
 
 
 def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
@@ -240,7 +247,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 	i = 0
 	j = 0
 	root = True
-	root_pos = -1
+	child_root_pos = -1
 	prev_pos = ''
 	fout = open(outFile, 'w')
 	with open(infile) as f:
@@ -253,7 +260,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 				assert line == pred_line
 				# new sentence restart counter
 				root = True
-				root_pos = -1
+				child_root_pos = -1
 				fout.write(line + '\n')
 				i += 1
 			elif line != '' and pred_line == '':
@@ -262,6 +269,7 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 				if '-' in wid or '.' in wid:
 					fout.write(line + '\n')
 				else:
+					# set parent = previous word
 					tokens[6] = str(int(wid) - 1)
 					key = tuple([tokens[3], prev_pos])
 					if key in deprel_dist:
@@ -286,21 +294,19 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 					fields[4] = tokens[4]
 					fields[5] = tokens[5]
 					if fields[6] == '0' and fields[7] != 'root':
-						if fields[0] == '1':
-							fields[7] = 'root'
-							root = False
-							root_pos = fields[0]
-						else:
-							fields[6] = str(int(fields[0]) - 1)
+						fields[7] = 'root'
+						root = False
+						child_root_pos = fields[0]
 					elif fields[6] == '0' and fields[7] == 'root':
-						fields[6] = str(int(fields[0]) - 1)
 						if root:
 							root = False
-							root_pos = fields[0]
-						else:  # change prediction of there is already a root
-							fields[6] = root_pos
+							child_root_pos = fields[0]
+						else:  
+						# change prediction of there is already a root
+						# set parent to the child root
+							fields[6] = child_root_pos
 							fields[7] = 'ccomp'
-		
+
 					prev_pos = fields[3]
 					pred_line = '\t'.join(fields)
 					fout.write(pred_line + '\n')
