@@ -205,12 +205,14 @@ def postprocess(infile, predFile, outFile, deprel_vocab):
 				# read line
 				tokens = line.split('\t')
 				assert len(tokens) == 10
-				if '-' in tokens[0]:
+				if '-' in tokens[0] or '.' in tokens[0]:
 					fout.write(line + '\n')
 					j += 1
 				else:
 					fields = pred_line.split('\t')
 					assert len(fields) == 10
+					fields[2] = tokens[2]
+					fields[4] = tokens[4]
 					fields[5] = tokens[5]
 					if fields[7] == 'root':
 						if root:
@@ -277,7 +279,6 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 				assert len(tokens) == 10
 				if '-' in tokens[0] or '.' in tokens[0]:
 					fout.write(line + '\n')
-					j += 1
 				else:
 					fields = pred_line.split('\t')
 					assert len(fields) == 10
@@ -285,7 +286,6 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 					fields[4] = tokens[4]
 					fields[5] = tokens[5]
 					if fields[6] == '0' and fields[7] != 'root':
-<<<<<<< HEAD
 						if fields[0] == '1':
 							fields[7] = 'root'
 							root = False
@@ -293,16 +293,14 @@ def postprocess_dist(infile, predFile, outFile, model, codedir, deprel_vocab):
 						else:
 							fields[6] = str(int(fields[0]) - 1)
 					elif fields[6] == '0' and fields[7] == 'root':
-=======
 						fields[6] = str(int(fields[0]) - 1)
-					if fields[6] == '0' and fields[7] == 'root':
->>>>>>> 6e59930aa22820cdd8b5abe8408dad8cd6e3ddf6
 						if root:
 							root = False
 							root_pos = fields[0]
 						else:  # change prediction of there is already a root
 							fields[6] = root_pos
 							fields[7] = 'ccomp'
+		
 					prev_pos = fields[3]
 					pred_line = '\t'.join(fields)
 					fout.write(pred_line + '\n')
